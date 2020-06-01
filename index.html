@@ -227,19 +227,23 @@
 		.box-gb{
 			background-color: #61353f3b;
 		}
-		.box-grid{
+		.box-grid-2col, .box-grid-3col{
 			display: flex;
 			padding: 0;
 			margin-left: -5px;
 			margin-right: -5px;
 			margin-bottom: 30px;
 		}
-
-		.box-grid > *{
-			flex-basis: 50%;
+		.box-grid-2col > *, .box-grid-3col > *{
 			margin-left: 5px;
 			margin-right: 5px;
 			margin-bottom: 0;
+		}
+		.box-grid-2col > *{
+			flex-basis: 50%;
+		}
+		.box-grid-3col > *{
+			flex-basis: 33%;
 		}
 
 		@media (max-width: 700px) {
@@ -252,10 +256,10 @@
 		}
 
 
-		.box-grid .box-image{
+		.box-image{
 			margin-bottom: 30px;
 		}
-		.box-grid .box-image img{
+		.box-image img{
 			width: 100%;
 			display: block;
 		}
@@ -292,7 +296,7 @@
 
 	<div class="features">
 		<div class="container">
-			<div class="box-grid">
+			<div class="box-grid-2col">
 				<div class="features-text-box box-gb">
 					<img src="https://www.google.com/s2/favicons?domain=https://4anime.to">
 					<img src="https://www.google.com/s2/favicons?domain=https://9anime.to">
@@ -372,11 +376,11 @@
 					large selection of pages.
 				</div>
 			</div>
-			<div class="box-grid">
+			<div class="box-grid-3col">
 				<div class="box-image box-gb">
 					<img src="screenshots/1.png">
 					<div class="features-text-box">
-						Search, update and manage your list from everywhere with the extension popup.
+						Search, update and manage your list from everywhere with the extension popup
 					</div>
 				</div>
 				<div class="box-image box-gb">
@@ -385,12 +389,14 @@
 						Keeps track of the pages you used on the bookmark page
 					</div>
 				</div>
+				<div class="box-image box-gb">
+					<img src="screenshots/4.png">
+					<div class="features-text-box">
+						Show what you are watching with the discord rich presence support
+					</div>
+				</div>
 			</div>
 
-			<div class="box-grid">
-
-
-			</div>
 
 		</div>
 		<div class="contributer">
