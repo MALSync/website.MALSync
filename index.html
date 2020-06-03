@@ -7,6 +7,7 @@
 	<style type="text/css">
 		html {
 		  	box-sizing: border-box;
+		  	scroll-behavior: smooth;
 		}
 		body {
 			margin: 0;
@@ -81,12 +82,12 @@
 		}
 
 		@-webkit-keyframes mover {
-		    0% { transform: rotate(45deg); bottom:20px; }
-		    100% { transform: rotate(45deg); bottom:10px; }
+		    0% { transform: rotate(45deg); bottom:25px; }
+		    100% { transform: rotate(45deg); bottom:20px; }
 		}
 		@keyframes mover {
-		    0% { transform: rotate(45deg); bottom:20px; }
-		    100% { transform: rotate(45deg); bottom:10px; }
+		    0% { transform: rotate(45deg); bottom:25px; }
+		    100% { transform: rotate(45deg); bottom:20px; }
 		}
 
 		/*Features*/
@@ -348,28 +349,32 @@
 		}
 		.box-grid-2col, .box-grid-3col{
 			display: flex;
+			flex-wrap: wrap;
 			padding: 0;
 			margin-left: -5px;
 			margin-right: -5px;
-			margin-bottom: 30px;
 		}
 		.box-grid-2col > *, .box-grid-3col > *{
 			margin-left: 5px;
 			margin-right: 5px;
-			margin-bottom: 0;
+			margin-bottom: 30px;
+			flex-grow: 1;
 		}
 		.box-grid-2col > *{
-			flex-basis: 50%;
+			flex-basis: 47%;
 		}
 		.box-grid-3col > *{
-			flex-basis: 33%;
+			flex-basis: 30%;
+		}
+
+		@media (max-width: 1000px) {
+			.box-grid-3col > *{
+				flex-basis: 47%;
+			}
 		}
 
 		@media (max-width: 700px) {
-			.box-grid{
-				flex-wrap: wrap;
-			}
-			.box-grid > *{
+			.box-grid-2col > *, .box-grid-3col > *{
 				flex-basis: 100%;
 			}
 		}
@@ -410,10 +415,10 @@
 		  </div>
 		</div>
 
-		<div class="arrow"></div>
+		<a class="arrow" href="#features"></a>
 	</div>
 
-	<div class="features">
+	<div class="features" id="features">
 		<div class="container">
 			<div class="box-grid-2col">
 				<div class="features-text-box box-gb">
@@ -514,8 +519,6 @@
 						Direct links to the most popular pages
 					</div>
 				</div>
-			</div>
-			<div class="box-grid-3col">
 				<div class="box-image box-gb">
 					<img src="screenshots/4.png">
 					<div class="features-text-box">
