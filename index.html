@@ -99,7 +99,7 @@
 			position: absolute;
 			right: 0;
 			top: 0;
-
+			z-index: 4;
 			width: 40px;
 			height: 100%;
 		}
@@ -112,12 +112,113 @@
 			position: sticky;
 			top: 0;
 			width: 100%;
-			height: 100vh;
-			background-color: #2f31361f;
-			padding-top: 20px;
 			color: white;
-			text-align: center;
 		}
+
+		/*contributer*/
+
+		#contributer{
+		  width: 50px;
+		  height: 100%;
+		  float: right;
+		  -webkit-transition: width 1s;
+		  -o-transition: width 1s;
+		  transition: width 1s;
+		  overflow: hidden;
+		  position: relative;
+		  right: 0;
+		  z-index: 300;
+		}
+		  #contributer.hover:hover{
+		    width: 250px;
+		  }
+		  #contributer .contributer-inner{
+		    height: 100%;
+		    width: 100%;
+		    max-height: 100vh;
+		    overflow-y: scroll;
+		    padding-bottom: 10px;
+		    -webkit-transition: background-color 1s;
+		    -o-transition: background-color 1s;
+		    transition: background-color 1s;
+		    scrollbar-width: none;
+		  }
+		  #contributer .contributer-inner::-webkit-scrollbar {
+		  	display: none;
+		  }
+		  #contributer.hover:hover .contributer-inner{
+		    background-color: #2f3136;
+		  }
+		  #contributer .group{
+		    text-transform: uppercase;
+		    font-size: 12px;
+		    font-weight: bold;
+		    opacity: 0;
+		    -webkit-transition: 1s;
+		    -o-transition: 1s;
+		    -webkit-transition: 1s;
+		    -o-transition: 1s;
+		    transition: 1s;
+		    color: #707070;
+		    padding: 10px;
+		    padding-top: 0;
+		    padding-bottom: 0;
+		    max-height: 0;
+		  }
+		  #contributer.hover:hover .group{
+		    opacity: 1;
+		    max-height: 40px;
+		    padding-top: 0;
+		    padding-bottom: 0;
+		    padding: 10px;
+		  }
+		  #contributer .user{
+		    padding: 5px 10px;
+		    height: 40px;
+		    white-space: nowrap;
+		    overflow: hidden;
+		  }
+		  #contributer .user .image{
+		    position: relative;
+		    display: inline-block;
+		    height: 32px;
+		    widows: 32px;
+		    margin-right: 10px;
+		    border-radius: 50%;
+		    overflow: hidden;
+		  }
+		  #contributer .user .image img{
+		    height: 100%;
+		    widows: 100%;
+		  }
+		  #contributer .user .image .gif{
+		    position: absolute;
+		    display: none;
+		  }
+		  #contributer.hover:hover .user .image .gif{
+		    display: block;
+		  }
+		  #contributer .user .text{
+		    display: inline-block;
+		    width: 190px;
+		    line-height: 100%;
+		    opacity: 0;
+		    -webkit-transition: opacity 1s;
+		    -o-transition: opacity 1s;
+		    transition: opacity 1s;
+		  }
+		  #contributer.hover:hover .user .text{
+		    opacity: 1;
+		  }
+		  #contributer .user .text .name{
+		    -o-text-overflow: ellipsis;
+		       text-overflow: ellipsis;
+		    overflow: hidden;
+		  }
+		  #contributer .user .text .subtext{
+		    color: #b9bbbe;
+		    font-size: 12px;
+		  }
 
 		/*Changelog*/
 		.changelog{
@@ -417,7 +518,13 @@
 
 		</div>
 		<div class="contributer">
-			<div class="contributer-sticky">C<br>o<br>n<br>t<br>r<br>i<br>b<br>u<br>t<br>e<br>r</div>
+			<div class="contributer-sticky">
+				<div id="contributer">
+					<div class="contributer-inner">
+
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<canvas id="starCanvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none;" ></canvas>
@@ -700,6 +807,64 @@
 	                window.setTimeout(callback, 1000 / 60);
 	              };
 	    })();
+	  </script>
+	  <script type="text/javascript">
+	  	var xhr = new XMLHttpRequest();
+	  	xhr.onreadystatechange = function() {
+	  	    try {
+	  	      	contributer(JSON.parse(xhr.responseText));
+	  	    } catch (e) {
+	  	      	console.error('Contributer Could not be retieved', e);
+	  	    }
+	  	};
+	  	xhr.open('GET', 'https://api.malsync.moe/static/contributor');
+	  	xhr.send();
+
+	  	function contributer(contr) {
+	  	  console.log('Contributer', contr);
+	  	  let html = '';
+
+	  	  for (const group in contr) {
+	  	    console.log(group);
+	  	    html += `<div class="group">${group}</div>`;
+	  	    for (const user in contr[group]) {
+	  	      const userVal = contr[group][user];
+
+	  	      if (typeof userVal.subText !== 'undefined' && userVal.subText) {
+	  	        userVal.subText = `<div class="subtext">${userVal.subText}</div>`;
+	  	      } else {
+	  	        userVal.subText = '';
+	  	      }
+
+	  	      if (typeof userVal.gif !== 'undefined' && userVal.gif) {
+	  	        userVal.gif = `<img class="gif" src="${userVal.gif}">`;
+	  	      } else {
+	  	        userVal.gif = '';
+	  	      }
+
+	  	      console.log(contr[group][user]);
+	  	      html += `
+	  	        <div class="user">
+	  	          <div class="image align-middle">
+	  	            ${userVal.gif}
+	  	            <img src="${userVal.image}">
+	  	          </div>
+	  	          <div class="text align-middle">
+	  	            <div class="name" style="color: ${userVal.color}" title="${userVal.name}">
+	  	              ${userVal.name}
+	  	            </div>
+	  	            ${userVal.subText}
+	  	          </div>
+	  	        </div>
+	  	      `;
+	  	    }
+	  	  }
+
+	  	  var ch = document.querySelector('#contributer .contributer-inner');
+	  	  ch.innerHTML = html;
+
+	  	  document.querySelector('#contributer').classList.add("hover");
+	  	}
 	  </script>
 	  <script type="text/javascript">
 	    var changelogData = [
