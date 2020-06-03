@@ -1,0 +1,22 @@
+{
+  "name": "website.malsync",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:favicons": "node build/getFavicons.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MALSync/website.MALSync.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MALSync/website.MALSync/issues"
+  },
+  "homepage": "https://github.com/MALSync/website.MALSync#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
