@@ -1,24 +1,10 @@
 const fs = require('fs');
 const request = require('request');
 
-var pages = [
-	{
-		name: 'gogoanimes',
-		domain: 'https://gogoanimes.co'
-	},
-	{
-		name: 'serimanga',
-		domain: 'https://serimanga.com'
-	},
-	{
-		name: 'kissanime',
-		domain: 'https://kissanime.ru/'
-	}
-]
-
 main();
 
 async function main() {
+	const pages = await getJson();
 	var res = await filterJson(pages);
 
 	for(let i in res) {
@@ -26,8 +12,24 @@ async function main() {
 		await saveImage(el.name+'.png', 'https://www.google.com/s2/favicons?domain='+el.domain);
 	}
 
-	fs.writeFileSync('pages/pages.json', JSON.stringify(res));
+	fs.writeFileSync('pages/pages.json', JSON.stringify(res, null, 2));
 	console.log('Done');
+}
+
+async function getJson() {
+	const url = 'https://raw.githubusercontent.com/lolamtisch/MALSync/master/src/pages/list.json';
+	return new Promise((resolve, reject) => {
+		request({url: url}, function (error, response, body) {
+			if(error) {
+				console.error('error:', error);
+				reject(error);
+				return;
+			}
+			if(response && response.statusCode === 200) {
+				resolve(JSON.parse(body));
+			}
+		});
+	})
 }
 
 async function filterJson(json) {
