@@ -1,0 +1,101 @@
+/*Changelog*/
+.changelog{
+	/*background-color: #c96f53;*/
+	background-color: black;
+	position: relative;
+}
+.pattern{
+	background: url('../background.png');
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100vh;
+	position: relative;
+	top: -40px;
+	left: -40px;
+}
+.sticky-pattern{
+	position: sticky;
+	top: 0;
+	height: 0;
+}
+#changelog-content {
+	padding-top: 40px;
+}
+#changelog-content a {
+	cursor: pointer;
+	text-decoration: underline;
+	color: white;
+}
+#changelog-content .text-box{
+	position: relative;
+	margin-bottom: 60px;
+}
+
+.features a {
+	color: inherit;
+	padding-top: 10px;
+	display: block;
+}
+
+.features a:hover {
+	text-decoration: none;
+}
+
+.features a:active {
+	color: inherit;
+}
+
+.features a:visited {
+	color: inherit;
+}
+
+#changelog-content .card-header{
+	position: absolute;
+	top: -29px;
+	left: 10px;
+	padding: 5px 10px;
+	background-color: red;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	background-color: #715c6adb;
+}
+
+#changelog-content .card-header a{
+	text-decoration: none;
+}
+
+.badge {
+	opacity: 0.4;
+	font-family: Arial;
+	float: right;
+	display: inline-block;
+	padding: .25em .4em;
+	font-size: 75%;
+	font-weight: 700;
+	line-height: 1;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25rem;
+}
+.text-box:hover .badge{
+	opacity: 1;
+}
+.list-group-item{
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.badge-info {
+	color: #fff;
+	background-color: #17a2b8;
+}
+.badge-secondary {
+	color: #fff;
+	background-color: #6c757d;
+}
+.badge-warning {
+	color: #212529;
+	background-color: #ffc107;
+}

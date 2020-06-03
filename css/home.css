@@ -1,0 +1,68 @@
+/*Home*/
+.above{
+	background: linear-gradient(to bottom, #032e45 0%,#9b7c91 100%);
+}
+.loader2-div{
+	border: 10px solid white;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: white;
+}
+.loader2-div img{
+	display: block;
+}
+
+.cover-card {
+	border: 0;
+	background-color: black;
+	background-color: #0000001f;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	max-width: 540px;
+	padding: 1.25rem;
+	text-align: center;
+}
+
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	border-color: #f8f9fa;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+}
+.btn:hover {
+	color: #212529;
+	background-color: #f8f9fa;
+	border-color: #f8f9fa;
+}
+
+.arrow {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -11px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 10px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-webkit-animation: mover 2s infinite alternate;
+	animation: mover 2s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+	0% { transform: rotate(45deg); bottom:25px; }
+	100% { transform: rotate(45deg); bottom:20px; }
+}
+@keyframes mover {
+	0% { transform: rotate(45deg); bottom:25px; }
+	100% { transform: rotate(45deg); bottom:20px; }
+}

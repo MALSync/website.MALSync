@@ -1,0 +1,25 @@
+/*Features*/
+.features{
+	background-color: #9b7c91;
+	position: relative;
+	min-height: 100vh;
+}
+.contributer {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 4;
+	width: 40px;
+	height: 100%;
+}
+@media (max-width: 700px) {
+	.contributer {
+		display: none;
+	}
+}
+.contributer-sticky {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	color: white;
+}

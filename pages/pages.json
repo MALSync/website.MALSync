@@ -5,6 +5,11 @@
     "name": "kissanime"
   },
   {
+    "domain": "https://kissmanga.com",
+    "type": "manga",
+    "name": "kissmanga"
+  },
+  {
     "domain": "https://9anime.to",
     "type": "anime",
     "name": "9anime"
