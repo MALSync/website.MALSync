@@ -21,7 +21,23 @@ function resize(width, output, input) {
 	sharp(input)
 	    .png()
 	    .resize(width, null)
+	    .sharpen()
 	    .toFile(output,
+	    function(err){
+	        if(err){
+	        	console.log("Error at reducing size / converting picture : ")
+	        	console.log(err)
+	        	console.log(input);
+	        	console.log(output);
+	        	return;
+	        }
+	    })
+
+	sharp(input)
+	    .png()
+	    .resize(width*2, null)
+	    .sharpen()
+	    .toFile(output.replace('.png', '-2x.png'),
 	    function(err){
 	        if(err){
 	        	console.log("Error at reducing size / converting picture : ")
