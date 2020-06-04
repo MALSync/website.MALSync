@@ -1,0 +1,36 @@
+on:
+  schedule:
+    - cron:  '*/15 * * * *'
+name: Deploy
+jobs:
+  update:
+    name: Build
+    steps:
+    - uses: actions/checkout@master
+      with:
+        ref: gh-pages
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - name: install
+      run: npm install
+    - name: Build
+      run: npm run build
+    - uses: sarisia/actions-status-discord@v1
+      if: failure()
+      with:
+        status: ${{ job.status }}
+      env:
+        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+    - name: Commit files
+      continue-on-error: true
+      run: |
+        git add *
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Build dependencies" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: 'scrap'

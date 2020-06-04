@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm run build:images && npm run build:favicons && npm run build:pages && npm run build:changelog && npm run build:contributer",
     "build:images": "node build/imageResize.js",
     "build:pages": "node build/pages.js",
     "build:changelog": "node build/changelog.js",
