@@ -7,6 +7,7 @@
     "build:images": "node build/imageResize.js",
     "build:pages": "node build/pages.js",
     "build:changelog": "node build/changelog.js",
+    "build:contributer": "node build/contributer.js",
     "build:favicons": "node build/getFavicons.js"
   },
   "repository": {
