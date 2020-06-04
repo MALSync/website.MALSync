@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:images": "node build/imageResize.js",
     "build:favicons": "node build/getFavicons.js"
   },
   "repository": {
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/MALSync/website.MALSync#readme",
   "dependencies": {
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "sharp": "^0.25.3"
   }
 }
