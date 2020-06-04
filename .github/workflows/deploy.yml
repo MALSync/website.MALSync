@@ -1,8 +1,9 @@
 on:
   schedule:
-    - cron:  '*/15 * * * *'
+    - cron:  '*/5 * * * *'
 name: Deploy
 jobs:
+  runs-on: ubuntu-latest
   update:
     name: Build
     steps:
