@@ -1,13 +1,17 @@
-var xhr = new XMLHttpRequest();
-xhr.onreadystatechange = function() {
-	try {
-		contributer(JSON.parse(xhr.responseText));
-	} catch (e) {
-		console.error('Contributer could not be retieved', e);
-	}
-};
-xhr.open('GET', 'https://api.malsync.moe/static/contributor');
-xhr.send();
+setTimeout(main, 2000);
+
+function main() {
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function() {
+		try {
+			contributer(JSON.parse(xhr.responseText));
+		} catch (e) {
+			console.error('Contributer could not be retieved', e);
+		}
+	};
+	xhr.open('GET', 'https://api.malsync.moe/static/contributor');
+	xhr.send();
+}
 
 function contributer(contr) {
 	console.log('Contributer', contr);
