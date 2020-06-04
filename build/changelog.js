@@ -1,3 +1,71 @@
+const path = require('path');
+const fs = require('fs');
+
+function changelog() {
+	let html = '';
+
+	changelogData.forEach(function(version){
+		html += `<div class="text-box" id="${version.title.replace(/\./g,'-')}">
+		<div class="card-header">
+		<a target="_blank" href="https://github.com/lolamtisch/MALSync/releases/tag/${version.title}">
+		Version ${version.title}
+		</a>
+		</div>
+		<div class="list-group list-group-flush">`;
+
+		version.data.forEach(function(message){
+			message = messageHandling(message);
+			html += `<div class="list-group-item">
+			${message}
+			</div>`
+		})
+		html += '</div></div>';
+	})
+
+	function messageHandling(message){
+		var issues = /#\d*/g.exec(message);
+		if(issues){
+			issues.forEach(function(issue){
+				message = message.replace(issue,'<a target="_blank" href="https://github.com/lolamtisch/MALSync/issues/'+issue.replace('#','')+'">'+issue+'</a>');
+			})
+		}
+
+		var badges = /\[(.*?)\]/g.exec(message);
+		if(badges){
+			badges.forEach(function(badge){
+				if(badge[0] != '[') return
+					var content = badge.replace(/(^\[|\]$)/g,'');
+				var type = 'secondary';
+				if(content === 'FEATURE'){
+					type = 'info';
+				}
+				if(content === 'BUGFIX'){
+					type = 'warning';
+				}
+				message = message.replace(badge,'<span class="badge badge-'+type+'">'+content+'</span>');
+			})
+		}
+
+		return message;
+	}
+
+	const descFile = path.join(__dirname, '../index.html');
+	fs.readFile(descFile, 'utf8', function(err, data) {
+	  if (err) {
+	    return console.log(err);
+	  }
+	  const result = data.replace(/<!--changelog-->((.|\n|\r)*)<!--\/changelog-->/g, `<!--changelog-->\n${html}\n<!--/changelog-->`);
+
+	  fs.writeFile(descFile, result, 'utf8', function(err) {
+	    if (err) return console.log(err);
+	  });
+	});
+
+
+	return;
+
+}
+
 var changelogData = [
 {
 	title: '0.7.5',
@@ -641,50 +709,4 @@ var changelogData = [
 	]
 }
 ];
-
-var html = '';
-changelogData.forEach(function(version){
-	html += `<div class="text-box" id="${version.title.replace(/\./g,'-')}">
-	<div class="card-header">
-	<a target="_blank" href="https://github.com/lolamtisch/MALSync/releases/tag/${version.title}">
-	Version ${version.title}
-	</a>
-	</div>
-	<div class="list-group list-group-flush">`;
-
-	version.data.forEach(function(message){
-		message = messageHandling(message);
-		html += `<div class="list-group-item">
-		${message}
-		</div>`
-	})
-	html += '</div></div>';
-})
-var ch = document.getElementById("changelog-content");
-ch.innerHTML = html;
-function messageHandling(message){
-	var issues = /#\d*/g.exec(message);
-	if(issues){
-		issues.forEach(function(issue){
-			message = message.replace(issue,'<a target="_blank" href="https://github.com/lolamtisch/MALSync/issues/'+issue.replace('#','')+'">'+issue+'</a>');
-		})
-	}
-
-	var badges = /\[(.*?)\]/g.exec(message);
-	if(badges){
-		badges.forEach(function(badge){
-			if(badge[0] != '[') return
-				var content = badge.replace(/(^\[|\]$)/g,'');
-			var type = 'secondary';
-			if(content === 'FEATURE'){
-				type = 'info';
-			}
-			if(content === 'BUGFIX'){
-				type = 'warning';
-			}
-			message = message.replace(badge,'<span class="badge badge-'+type+'">'+content+'</span>');
-		})
-	}
-
-	return message;
-}
+changelog();

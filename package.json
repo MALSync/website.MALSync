@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:images": "node build/imageResize.js",
+    "build:changelog": "node build/changelog.js",
     "build:favicons": "node build/getFavicons.js"
   },
   "repository": {
