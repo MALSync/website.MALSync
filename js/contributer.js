@@ -30,7 +30,7 @@ function contributer(contr) {
 			}
 
 			if (typeof userVal.gif !== 'undefined' && userVal.gif) {
-				userVal.gif = `<img class="gif" src="${userVal.gif}">`;
+				userVal.gif = `<img loading="lazy" class="gif" src="${userVal.gif}">`;
 			} else {
 				userVal.gif = '';
 			}
@@ -40,7 +40,7 @@ function contributer(contr) {
 			<div class="user">
 			<div class="image align-middle">
 			${userVal.gif}
-			<img src="${userVal.image}">
+			<img loading="lazy" src="${userVal.image}">
 			</div>
 			<div class="text align-middle">
 			<div class="name" style="color: ${userVal.color}" title="${userVal.name}">
