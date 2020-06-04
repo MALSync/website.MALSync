@@ -1,11 +1,9 @@
-on:
-  schedule:
-    - cron:  '*/5 * * * *'
+on: [push]
 name: Deploy
 jobs:
-  runs-on: ubuntu-latest
-  update:
+  build:
     name: Build
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
       with:
