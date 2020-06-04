@@ -1,4 +1,9 @@
-on: [push]
+on:
+  schedule:
+    - cron:  '0 8 * * *'
+  push:
+    branches:
+      - gh-pages
 name: Deploy
 jobs:
   build:
