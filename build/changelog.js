@@ -7,7 +7,7 @@ function changelog() {
 	changelogData.forEach(function(version){
 		html += `<div class="text-box" id="${version.title.replace(/\./g,'-')}">
 		<div class="card-header">
-		<a target="_blank" href="https://github.com/lolamtisch/MALSync/releases/tag/${version.title}">
+		<a target="_blank" rel="noopener" href="https://github.com/lolamtisch/MALSync/releases/tag/${version.title}">
 		Version ${version.title}
 		</a>
 		</div>
@@ -26,7 +26,7 @@ function changelog() {
 		var issues = /#\d*/g.exec(message);
 		if(issues){
 			issues.forEach(function(issue){
-				message = message.replace(issue,'<a target="_blank" href="https://github.com/lolamtisch/MALSync/issues/'+issue.replace('#','')+'">'+issue+'</a>');
+				message = message.replace(issue,'<a target="_blank" rel="noopener" href="https://github.com/lolamtisch/MALSync/issues/'+issue.replace('#','')+'">'+issue+'</a>');
 			})
 		}
 
@@ -182,10 +182,10 @@ var changelogData = [
 {
 	title: '0.6.6',
 	data: [
-	'[FEATURE] add goyabu.com by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
-	'[FEATURE] add japscan.co by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
-	'[FEATURE] add mangaplus by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
-	'[FEATURE] add mangakisa.com by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
+	'[FEATURE] add goyabu.com by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
+	'[FEATURE] add japscan.co by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
+	'[FEATURE] add mangaplus by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
+	'[FEATURE] add mangakisa.com by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
 	'[BUGFIX] Fix Crunchyroll overview and player',
 	]
 },
@@ -193,10 +193,10 @@ var changelogData = [
 	title: '0.6.5',
 	data: [
 	'[FEATURE] Add posibility to mirror lists automatically once a day',
-	'[FEATURE] Add moeclip.com by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
-	'[FEATURE] Add mangalivre.com by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
-	'[FEATURE] Add tmofans.com by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
-	'[FEATURE] Add unionleitor.top by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
+	'[FEATURE] Add moeclip.com by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
+	'[FEATURE] Add mangalivre.com by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
+	'[FEATURE] Add tmofans.com by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
+	'[FEATURE] Add unionleitor.top by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
 	'[FEATURE] Add posibility to rate anime/manga on finish #157',
 	'[BUGFIX] Fix animeflix.io implementation #185',
 	'[BUGFIX] Round anilist scores correctly',
@@ -206,9 +206,9 @@ var changelogData = [
 {
 	title: '0.6.4',
 	data: [
-	'[FEATURE] add AnimeFever.tv by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
-	'[FEATURE] add mangadenizi.com by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
-	'[FEATURE] add serimanga.com by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
+	'[FEATURE] add AnimeFever.tv by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
+	'[FEATURE] add mangadenizi.com by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
+	'[FEATURE] add serimanga.com by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
 	'[BUGFIX] Fix html encoding in mal comments and tags #180',
 	'[BUGFIX] Fix animeflix not working if accessed from home #185',
 	'[BUGFIX] Fix episode detection on kissanime #188',
@@ -217,10 +217,10 @@ var changelogData = [
 {
 	title: '0.6.3',
 	data: [
-	'[FEATURE] Add polish translation by <a href="https://github.com/VATICAN-PSYCHO" target="_blank">VATICAN-PSYCHO</a>',
-	'[FEATURE] Add anime-odcinki.pl by <a href="https://github.com/VATICAN-PSYCHO" target="_blank">VATICAN-PSYCHO</a>',
-	'[FEATURE] Add animezone.pl by <a href="https://github.com/VATICAN-PSYCHO" target="_blank">VATICAN-PSYCHO</a>',
-	'[FEATURE] add animeflix.io by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
+	'[FEATURE] Add polish translation by <a href="https://github.com/VATICAN-PSYCHO" target="_blank" rel="noopener">VATICAN-PSYCHO</a>',
+	'[FEATURE] Add anime-odcinki.pl by <a href="https://github.com/VATICAN-PSYCHO" target="_blank" rel="noopener">VATICAN-PSYCHO</a>',
+	'[FEATURE] Add animezone.pl by <a href="https://github.com/VATICAN-PSYCHO" target="_blank" rel="noopener">VATICAN-PSYCHO</a>',
+	'[FEATURE] add animeflix.io by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
 	'[BUGFIX] Fix problem with long lists on kitsu',
 	'[FEATURE] Add cleanup script for removing all malsync:: tags from lists',
 	'[BUGFIX] Add gogoanime.video domain',
@@ -239,11 +239,11 @@ var changelogData = [
 {
 	title: '0.6.1',
 	data: [
-	'[FEATURE] Add Discord Rich Presence support <a href="https://github.com/lolamtisch/MALSync/wiki/Discord-Rich-Presence" target="_blank">wiki</a>',
-	'[FEATURE] Add NekoSama by <a href="https://github.com/Arias800" target="_blank">Arias800</a>',
-	'[FEATURE] Add manganelo.com / mangakakalot.com by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
-	'[FEATURE] Add Viz.com by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
-	'[FEATURE] Add dubbedanime.net by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
+	'[FEATURE] Add Discord Rich Presence support <a href="https://github.com/lolamtisch/MALSync/wiki/Discord-Rich-Presence" target="_blank" rel="noopener">wiki</a>',
+	'[FEATURE] Add NekoSama by <a href="https://github.com/Arias800" target="_blank" rel="noopener">Arias800</a>',
+	'[FEATURE] Add manganelo.com / mangakakalot.com by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
+	'[FEATURE] Add Viz.com by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
+	'[FEATURE] Add dubbedanime.net by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
 	'[BUGFIX] Fix local cachekey not specific enough #165',
 	'[BUGFIX] Fix for Strict Cookies option',
 	]
@@ -253,7 +253,7 @@ var changelogData = [
 	data: [
 	'[FEATURE] Add Simkl support #122',
 	'[FEATURE] Add option to open the miniMAL popup as a seperate window',
-	'[FEATURE] add funimation.com by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
+	'[FEATURE] add funimation.com by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
 	'[FEATURE] Add Voiranime #136',
 	'[FEATURE] Add french translation',
 	'[FEATURE] Add first install page',
@@ -267,7 +267,7 @@ var changelogData = [
 {
 	title: '0.5.4',
 	data: [
-	'[FEATURE] Add shinden.pl by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
+	'[FEATURE] Add shinden.pl by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
 	'[BUGFIX] Fix branitube',
 	'[BUGFIX] Fix aniflix.tv',
 	'[FEATURE] Show user ratings in miniMAL bookmarks',
@@ -279,9 +279,9 @@ var changelogData = [
 	title: '0.5.3',
 	data: [
 	'[BUGFIX] Add new openload.pw domain',
-	'[FEATURE] Add animekisa.tv by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
-	'[FEATURE] Add AnimeIndo.moe by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
-	'[FEATURE] Add wakanim.tv by <a href="https://github.com/Arias800" target="_blank">Arias800</a>',
+	'[FEATURE] Add animekisa.tv by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
+	'[FEATURE] Add AnimeIndo.moe by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
+	'[FEATURE] Add wakanim.tv by <a href="https://github.com/Arias800" target="_blank" rel="noopener">Arias800</a>',
 	'[TASK] Add dreamanimes.com.br overview page support',
 	'[BUGFIX] Fix Netflix when the language is not set to english',
 	]
@@ -291,10 +291,10 @@ var changelogData = [
 	data: [
 	'[FEATURE] miniMAL can now use the metadata from kitsu/anilist #50',
 	'[FEATURE] The search fields in miniMAL now use the data from anilist/kitsu and not only mal',
-	'[FEATURE] Add <a href="https://github.com/lolamtisch/MALSync/wiki/List-Sync" target="_blank">list mirroring</a> between MAL, Anilist and kitsu (ALPHA) #71',
-	'[FEATURE] Add Indonesian translation by <a href="https://github.com/nattadasu" target="_blank">Natsu Tadama</a>',
-	'[FEATURE] Add kickassanime.io by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
-	'[FEATURE] Add riie.net by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
+	'[FEATURE] Add <a href="https://github.com/lolamtisch/MALSync/wiki/List-Sync" target="_blank" rel="noopener">list mirroring</a> between MAL, Anilist and kitsu (ALPHA) #71',
+	'[FEATURE] Add Indonesian translation by <a href="https://github.com/nattadasu" target="_blank" rel="noopener">Natsu Tadama</a>',
+	'[FEATURE] Add kickassanime.io by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
+	'[FEATURE] Add riie.net by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
 	'[BUGFIX] Fix highlighting unreadable in dark themes of mangadex',
 	]
 },
@@ -302,15 +302,15 @@ var changelogData = [
 	title: '0.5.1',
 	data: [
 	'[FEATURE] Add novelplanet.com',
-	'[FEATURE] Add (beta.)wonderfulsubs.com by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
-	'[FEATURE] Add kawaiifu.com by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
-	'[FEATURE] Add 4Anime.to by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
-	'[FEATURE] Add dreamanimes.com.br by <a href="https://github.com/SwagOtaku" target="_blank">SwagOtaku</a>',
-	'[FEATURE] Add animeultima.eu by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
-	'[FEATURE] Add aniflix.tv by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
-	'[FEATURE] Add animefreak.tv by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
-	'[FEATURE] Add animedaisuki.moe by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
-	'[FEATURE] Add anime-planet.com by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
+	'[FEATURE] Add (beta.)wonderfulsubs.com by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
+	'[FEATURE] Add kawaiifu.com by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
+	'[FEATURE] Add 4Anime.to by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
+	'[FEATURE] Add dreamanimes.com.br by <a href="https://github.com/SwagOtaku" target="_blank" rel="noopener">SwagOtaku</a>',
+	'[FEATURE] Add animeultima.eu by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
+	'[FEATURE] Add aniflix.tv by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
+	'[FEATURE] Add animefreak.tv by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
+	'[FEATURE] Add animedaisuki.moe by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
+	'[FEATURE] Add anime-planet.com by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
 	'[TASK] Add Local storage fallback import and export',
 	'[TASK] Optimise manga search',
 	'[BUGFIX] Video skipping #95',
@@ -322,8 +322,8 @@ var changelogData = [
 	data: [
 	'[FEATURE] Add Local storage fallback (Beta)',
 	'[FEATURE] Add auto resume',
-	'[FEATURE] Add animevibe.tv by <a href="https://github.com/SwagOtaku" target="_blank">SwagOtaku</a>',
-	'[FEATURE] Add miniMAL Dark Theme by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
+	'[FEATURE] Add animevibe.tv by <a href="https://github.com/SwagOtaku" target="_blank" rel="noopener">SwagOtaku</a>',
+	'[FEATURE] Add miniMAL Dark Theme by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
 	'[TASK] Make nextEp and updateCheck independent from MAL',
 	'[BUGFIX] Fix Netflix season handling',
 	]
@@ -338,7 +338,7 @@ var changelogData = [
 {
 	title: '0.4.16',
 	data: [
-	'[FEATURE] Add Proxer.me support by <a href="https://github.com/henrik9999" target="_blank">orell</a>',
+	'[FEATURE] Add Proxer.me support by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
 	'[FEATURE] Add VRV.co support',
 	]
 },
@@ -357,19 +357,19 @@ var changelogData = [
 	data: [
 	'[BUGFIX] Fix netflix on Firefox',
 	'[BUGFIX] Fix MAL-Sync on Android',
-	'[TASK] Add Swedish localization by <a href="https://github.com/Soitora" target="_blank">Soitora</a>',
-	'[TASK] Add Dutch localization by <a href="https://github.com/SnowDuts" target="_blank">SnowDuts</a>',
-	'[TASK] Add Italian localization by <a href="https://github.com/Lorenzo-B" target="_blank">Lorenzo-B</a>',
-	'[TASK] Add Portuguese-BR localization by <a href="https://github.com/EHLuC" target="_blank">EHLuC</a>',
+	'[TASK] Add Swedish localization by <a href="https://github.com/Soitora" target="_blank" rel="noopener">Soitora</a>',
+	'[TASK] Add Dutch localization by <a href="https://github.com/SnowDuts" target="_blank" rel="noopener">SnowDuts</a>',
+	'[TASK] Add Italian localization by <a href="https://github.com/Lorenzo-B" target="_blank" rel="noopener">Lorenzo-B</a>',
+	'[TASK] Add Portuguese-BR localization by <a href="https://github.com/EHLuC" target="_blank" rel="noopener">EHLuC</a>',
 	'[TASK] Add German localization',
 	]
 },
 {
 	title: '0.4.12',
 	data: [
-	'[FEATURE] Add localization support by <a href="https://github.com/kaiserdj" target="_blank">Kaiserdj</a>',
-	'[TASK] Add spanish locale by <a href="https://github.com/kaiserdj" target="_blank">Kaiserdj</a>',
-	'[TASK] Add turkish by <a href="https://github.com/cartals" target="_blank">cartals</a>',
+	'[FEATURE] Add localization support by <a href="https://github.com/kaiserdj" target="_blank" rel="noopener">Kaiserdj</a>',
+	'[TASK] Add spanish locale by <a href="https://github.com/kaiserdj" target="_blank" rel="noopener">Kaiserdj</a>',
+	'[TASK] Add turkish by <a href="https://github.com/cartals" target="_blank" rel="noopener">cartals</a>',
 	'[FEATURE] Make miniMAL work independent from Mal entries',
 	'[BUGFIX] Fix not able to add mangas to kitsu',
 	'[TASK] Add new 9anime domains',
@@ -404,9 +404,9 @@ var changelogData = [
 {
 	title: '0.4.8',
 	data: [
-	'[FEATURE] Add Animepahe support by <a href="https://github.com/Deterio" target="_blank">Deterio</a>',
-	'[FEATURE] Add Animeflv support by <a href="https://github.com/kaiserdj" target="_blank">Kaiserdj</a>',
-	'[FEATURE] Add JKanime support by <a href="https://github.com/kaiserdj" target="_blank">Kaiserdj</a>',
+	'[FEATURE] Add Animepahe support by <a href="https://github.com/Deterio" target="_blank" rel="noopener">Deterio</a>',
+	'[FEATURE] Add Animeflv support by <a href="https://github.com/kaiserdj" target="_blank" rel="noopener">Kaiserdj</a>',
+	'[FEATURE] Add JKanime support by <a href="https://github.com/kaiserdj" target="_blank" rel="noopener">Kaiserdj</a>',
 	'[BUGFIX] Fix Manual sync',
 	'[BUGFIX] Fix Mangadex chapter recognition',
 	]
@@ -424,8 +424,8 @@ var changelogData = [
 {
 	title: '0.4.6',
 	data: [
-	'[FEATURE] Add Emby support <a href="https://github.com/lolamtisch/MALSync/wiki/Emby-Plex" target="_blank">Wiki</a>',
-	'[FEATURE] Add Plex support <a href="https://github.com/lolamtisch/MALSync/wiki/Emby-Plex" target="_blank">Wiki</a>',
+	'[FEATURE] Add Emby support <a href="https://github.com/lolamtisch/MALSync/wiki/Emby-Plex" target="_blank" rel="noopener">Wiki</a>',
+	'[FEATURE] Add Plex support <a href="https://github.com/lolamtisch/MALSync/wiki/Emby-Plex" target="_blank" rel="noopener">Wiki</a>',
 	'[TASK] Readd Branitube support',
 	'[FEATURE] Add option to auto close miniMAL when clicking outside',
 	'[FEATURE] Add option to hide miniMAL button',
@@ -515,9 +515,9 @@ var changelogData = [
 {
 	title: '0.3.5',
 	data: [
-	'[FEATURE] Add <a target="_blank" href="https://www.anime4you.one">anime4you</a>',
-	'[FEATURE] Add <a target="_blank" href="https://branitube.org">branitube</a>',
-	'[FEATURE] Add <a target="_blank" href="http://www.turkanime.tv">turkanime</a>',
+	'[FEATURE] Add <a target="_blank" rel="noopener" href="https://www.anime4you.one">anime4you</a>',
+	'[FEATURE] Add <a target="_blank" rel="noopener" href="https://branitube.org">branitube</a>',
+	'[FEATURE] Add <a target="_blank" rel="noopener" href="http://www.turkanime.tv">turkanime</a>',
 	'[FEATURE] Add manga update check',
 	'[TASK] Open miniMAL if "Is anime correct?" is denied',
 	]
@@ -535,8 +535,8 @@ var changelogData = [
 {
 	title: '0.3.0',
 	data: [
-	'[FEATURE] Add <a target="_blank" href="https://mangarock.com">Mangarock</a>',
-	'[FEATURE] Add <a target="_blank" href="http://animeheaven.eu">AnimeHeaven</a>',
+	'[FEATURE] Add <a target="_blank" rel="noopener" href="https://mangarock.com">Mangarock</a>',
+	'[FEATURE] Add <a target="_blank" rel="noopener" href="http://animeheaven.eu">AnimeHeaven</a>',
 	'[BUGFIX] Use a higher resolution version of the questionmark placeholder on MAL',
 	'[FEATURE] Show estimation to next episode in miniMAL',
 	'[TASK] Display the last time update check was executed',
