@@ -47,4 +47,35 @@ function resize(width, output, input) {
 	        	return;
 	        }
 	    })
+
+	//Resize
+	sharp(input)
+	    .webp()
+	    .resize(width, null)
+	    .sharpen()
+	    .toFile(output.replace('.png', '.webp'),
+	    function(err){
+	        if(err){
+	        	console.log("Error at reducing size / converting picture : ")
+	        	console.log(err)
+	        	console.log(input);
+	        	console.log(output);
+	        	return;
+	        }
+	    })
+
+	sharp(input)
+	    .webp()
+	    .resize(width*2, null)
+	    .sharpen()
+	    .toFile(output.replace('.png', '-2x.webp'),
+	    function(err){
+	        if(err){
+	        	console.log("Error at reducing size / converting picture : ")
+	        	console.log(err)
+	        	console.log(input);
+	        	console.log(output);
+	        	return;
+	        }
+	    })
 }
