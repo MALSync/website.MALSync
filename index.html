@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -215,7 +214,61 @@
 
 	</div>
 
-	<script type="text/javascript" src="./js/star.js"></script>
+
+	<script type="text/javascript">
+		try {
+			var htmlCanvas = document.getElementById("starCanvas");
+			var offscreen = htmlCanvas.transferControlToOffscreen();
+
+			var worker = new Worker("js/starWorker.js");
+		}catch(e) {
+			console.error('starworker not supported');
+
+			var s = document.createElement( 'script' );
+			s.setAttribute( 'src', './js/star.js' );
+			s.setAttribute( 'type', 'text/javascript' );
+			document.body.appendChild( s );
+			throw e;
+		}
+
+	  	worker.postMessage({
+	  	  canvas: offscreen,
+	  	  canvasState: {
+	  	    width: document.body.clientWidth,
+	  	    height: document.body.clientHeight,
+	  	    starFall: window.scrollTop ? window.scrollTop : 0,
+	  	  },
+	  	  mode: 'init',
+	  	}, [offscreen]);
+
+	  	window.onresize = function() {
+	  	  worker.postMessage({
+	  	    canvasState: {
+	  	      width: document.body.clientWidth,
+	  	      height: document.body.clientHeight,
+	  	      starFall: window.scrollTop ? window.scrollTop : 0,
+	  	    },
+	  	    mode: 'resize',
+	  	  });
+	  	}
+
+	  	var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+	  	window.onscroll = function() {
+	  	  var scrollTopTemp = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+	  	  var scrollDistance = scrollTop - scrollTopTemp;
+	  	  scrollTop = scrollTopTemp;
+
+	  	  worker.postMessage({
+	  	    scrollDistance: scrollDistance,
+	  	    canvasState: {
+	  	      starFall: window.scrollTop ? window.scrollTop : 0,
+	  	    },
+	  	    mode: 'scrollDistance',
+	  	  });
+	  	}
+
+
+	</script>
 
 </body>
 </html>
