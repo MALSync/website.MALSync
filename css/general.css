@@ -79,3 +79,19 @@ body {
 	width: 100%;
 	display: block;
 }
+
+a.plain-link {
+	text-decoration: none;
+}
+
+a:hover.plain-link {
+	text-decoration: none;
+}
+
+a:active.plain-link {
+	text-decoration: none;
+}
+
+a:visited.plain-link {
+	text-decoration: none;
+}
