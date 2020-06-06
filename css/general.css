@@ -16,6 +16,10 @@ body {
 	height: 100vh;
 }
 
+.align-middle {
+	vertical-align: middle !important;
+}
+
 .container {
 	max-width: 1200px;
 	width: 100%;
