@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -235,8 +236,8 @@
 	  	worker.postMessage({
 	  	  canvas: offscreen,
 	  	  canvasState: {
-	  	    width: document.body.clientWidth,
-	  	    height: document.body.clientHeight,
+	  	    width: htmlCanvas.getBoundingClientRect().width,
+	  	    height: htmlCanvas.getBoundingClientRect().height,
 	  	    starFall: window.scrollTop ? window.scrollTop : 0,
 	  	  },
 	  	  mode: 'init',
@@ -245,8 +246,8 @@
 	  	window.onresize = function() {
 	  	  worker.postMessage({
 	  	    canvasState: {
-	  	      width: document.body.clientWidth,
-	  	      height: document.body.clientHeight,
+	  	      width: htmlCanvas.getBoundingClientRect().width,
+	  	      height: htmlCanvas.getBoundingClientRect().height,
 	  	      starFall: window.scrollTop ? window.scrollTop : 0,
 	  	    },
 	  	    mode: 'resize',
