@@ -21,7 +21,7 @@ async function contributer() {
 			}
 
 			if (typeof userVal.gif !== 'undefined' && userVal.gif) {
-				userVal.gif = `<img loading="lazy" class="gif" src="${userVal.gif}">`;
+				userVal.gif = `<img loading="lazy" class="gif" src="${userVal.gif}" alt="${userVal.name} Gif">`;
 			} else {
 				userVal.gif = '';
 			}
@@ -31,7 +31,7 @@ async function contributer() {
 			<div class="user">
 			<div class="image align-middle">
 			${userVal.gif}
-			<img loading="lazy" src="${userVal.image}">
+			<img loading="lazy" src="${userVal.image}" alt="${userVal.name}">
 			</div>
 			<div class="text align-middle">
 			<div class="name" style="color: ${userVal.color}" title="${userVal.name}">

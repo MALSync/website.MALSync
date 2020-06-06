@@ -9,7 +9,7 @@ function favicons() {
 	for (const i in pages) {
 		let el = pages[i];
 		html += `
-		<img title="${el.name}" src="pages/${el.name}.png" height="16" width="16">
+		<img title="${el.name}" alt="${el.name}" src="pages/${el.name}.png" height="16" width="16">
 		`;
 	}
 
