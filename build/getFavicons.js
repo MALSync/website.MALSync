@@ -17,7 +17,7 @@ async function main() {
 }
 
 async function getJson() {
-	const url = 'https://raw.githubusercontent.com/lolamtisch/MALSync/master/src/pages/list.json';
+	const url = 'https://raw.githubusercontent.com/MALSync/MALSync/master/src/pages/list.json';
 	return new Promise((resolve, reject) => {
 		request({url: url}, function (error, response, body) {
 			if(error) {

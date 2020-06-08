@@ -7,7 +7,7 @@ function changelog() {
 	changelogData.forEach(function(version){
 		html += `<div class="text-box" id="${version.title.replace(/\./g,'-')}">
 		<div class="card-header">
-		<a target="_blank" rel="noopener" href="https://github.com/lolamtisch/MALSync/releases/tag/${version.title}">
+		<a target="_blank" rel="noopener" href="https://github.com/MALSync/MALSync/releases/tag/${version.title}">
 		Version ${version.title}
 		</a>
 		</div>
@@ -26,7 +26,7 @@ function changelog() {
 		var issues = /#\d*/g.exec(message);
 		if(issues){
 			issues.forEach(function(issue){
-				message = message.replace(issue,'<a target="_blank" rel="noopener" href="https://github.com/lolamtisch/MALSync/issues/'+issue.replace('#','')+'">'+issue+'</a>');
+				message = message.replace(issue,'<a target="_blank" rel="noopener" href="https://github.com/MALSync/MALSync/issues/'+issue.replace('#','')+'">'+issue+'</a>');
 			})
 		}
 
@@ -239,7 +239,7 @@ var changelogData = [
 {
 	title: '0.6.1',
 	data: [
-	'[FEATURE] Add Discord Rich Presence support <a href="https://github.com/lolamtisch/MALSync/wiki/Discord-Rich-Presence" target="_blank" rel="noopener">wiki</a>',
+	'[FEATURE] Add Discord Rich Presence support <a href="https://github.com/MALSync/MALSync/wiki/Discord-Rich-Presence" target="_blank" rel="noopener">wiki</a>',
 	'[FEATURE] Add NekoSama by <a href="https://github.com/Arias800" target="_blank" rel="noopener">Arias800</a>',
 	'[FEATURE] Add manganelo.com / mangakakalot.com by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
 	'[FEATURE] Add Viz.com by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
@@ -291,7 +291,7 @@ var changelogData = [
 	data: [
 	'[FEATURE] miniMAL can now use the metadata from kitsu/anilist #50',
 	'[FEATURE] The search fields in miniMAL now use the data from anilist/kitsu and not only mal',
-	'[FEATURE] Add <a href="https://github.com/lolamtisch/MALSync/wiki/List-Sync" target="_blank" rel="noopener">list mirroring</a> between MAL, Anilist and kitsu (ALPHA) #71',
+	'[FEATURE] Add <a href="https://github.com/MALSync/MALSync/wiki/List-Sync" target="_blank" rel="noopener">list mirroring</a> between MAL, Anilist and kitsu (ALPHA) #71',
 	'[FEATURE] Add Indonesian translation by <a href="https://github.com/nattadasu" target="_blank" rel="noopener">Natsu Tadama</a>',
 	'[FEATURE] Add kickassanime.io by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
 	'[FEATURE] Add riie.net by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
@@ -424,8 +424,8 @@ var changelogData = [
 {
 	title: '0.4.6',
 	data: [
-	'[FEATURE] Add Emby support <a href="https://github.com/lolamtisch/MALSync/wiki/Emby-Plex" target="_blank" rel="noopener">Wiki</a>',
-	'[FEATURE] Add Plex support <a href="https://github.com/lolamtisch/MALSync/wiki/Emby-Plex" target="_blank" rel="noopener">Wiki</a>',
+	'[FEATURE] Add Emby support <a href="https://github.com/MALSync/MALSync/wiki/Emby-Plex" target="_blank" rel="noopener">Wiki</a>',
+	'[FEATURE] Add Plex support <a href="https://github.com/MALSync/MALSync/wiki/Emby-Plex" target="_blank" rel="noopener">Wiki</a>',
 	'[TASK] Readd Branitube support',
 	'[FEATURE] Add option to auto close miniMAL when clicking outside',
 	'[FEATURE] Add option to hide miniMAL button',
