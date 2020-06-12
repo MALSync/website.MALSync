@@ -68,10 +68,15 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.7.7',
+	data: [
+	'[BUGFIX] Firefox hotfix',
+	]
+},
+{
 	title: '0.7.6',
 	data: [
-	'[FEATURE] The usage of the tag/notes section is now fully optional with the only ',
-	'advantage that it is saved permanent and cross browser',
+	'[FEATURE] The usage of the tag/notes section is now fully optional with the only advantage that it is saved permanent and cross browser',
 	'[FEATURE] Add a random anime button for the PTW list in the extension popup',
 	'[TASK] Add AnimeId',
 	'[TASK] Add AniHub',
