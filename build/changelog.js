@@ -68,6 +68,23 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.7.6',
+	data: [
+	'[FEATURE] The usage of the tag/notes section is now fully optional with the only ',
+	'advantage that it is saved permanent and cross browser',
+	'[FEATURE] Add a random anime button for the PTW list in the extension popup',
+	'[TASK] Add AnimeId',
+	'[TASK] Add AniHub',
+	'[TASK] Add scantrad',
+	'[TASK] Add AnimeStreamingFR',
+	'[TASK] Add TRanimeizle',
+	'[TASK] Remove Animeplanet',
+	'[TASK] Remove Mangakakalot',
+	'[TASK] Remove Dream Animes',
+	'[TASK] Remove NovelPlanet',
+	]
+},
+{
 	title: '0.7.5',
 	data: [
 	'[BUGFIX] MAL review profile images resized incorrectly #355',
