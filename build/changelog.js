@@ -68,6 +68,12 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.7.8',
+	data: [
+	'[BUGFIX] hotfix MyAnimeList and Anilist onsite lists',
+	]
+},
+{
 	title: '0.7.7',
 	data: [
 	'[BUGFIX] Firefox hotfix',
