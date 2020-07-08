@@ -7,17 +7,17 @@
 	border-radius: 50%;
 	display: inline-block;
 	background-color: white;
-	-webkit-animation: spin 2s linear infinite;
-	animation: spin 2s linear infinite;
-	-webkit-animation-play-state: paused;
-	animation-play-state: paused;
 }
-.loader2-div:hover{
+.loader2-div:hover img{
   -webkit-animation-play-state: running;
   animation-play-state: running;
 }
 .loader2-div img{
 	display: block;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+	-webkit-animation-play-state: paused;
+	animation-play-state: paused;
 }
 
 .cover-card {

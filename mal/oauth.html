@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="google-site-verification" content="fEjK72S42_4AimaYyQ8wWa5AUlkfZBvPTDDlFQPg7uw" />
+	<meta charset="utf-8"/>
+	<title>MyAnimeList Sync</title>
+	<meta name="description" content="Integrates MyAnimeList/AniList/Kitsu/Simkl into various sites, with auto episode tracking." />
+	<link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="../css/changelog.css">
+	<link type="text/css" rel="stylesheet" href="../css/contributer.css">
+	<link type="text/css" rel="stylesheet" href="../css/features.css">
+	<link type="text/css" rel="stylesheet" href="../css/general.css">
+	<link type="text/css" rel="stylesheet" href="../css/home.css">
+	<style type="text/css">
+		.cover-card {
+			min-height: 250px;
+		}
+		.l {
+			display: none;
+		}
+		.loading .l {
+			display: block;
+		}
+		.loading .loader2-div img {
+		    -webkit-animation-play-state: running;
+		    animation-play-state: running;
+		}
+
+		.err {
+			display: none;
+		}
+		.noExtension .err {
+			display: block;
+		}
+		.noExtension .loader2-div {
+			border-color: red;
+			background-color: red;
+			transition: border-color 1s;
+		}
+		.noExtension .loader2-div img {
+			filter: blur(4px);
+			transition: filter 1s;
+		}
+
+	</style>
+</head>
+<body class="loading">
+
+	<div class="block above">
+		<div class="cover-card">
+			<div class="card-body">
+				<div class="loader2-div">
+					<img src="../icons/mal-sync-icon.svg" alt="MALSync icon" height="80" width="80" />
+				</div>
+				<h1 class="card-title l">Loading</h1>
+				<h2 class="card-text err" style="font-size: 1rem; font-weight: 400; line-height: 1.5;">
+					<br>
+					Extension or userscript not installed. <a href="/">More info</a>
+				</h2>
+			</div>
+		</div>
+
+	</div>
+
+	<canvas id="starCanvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none;" ></canvas>
+
+
+	<script type="text/javascript">
+		setTimeout(() => {
+			if(document.querySelector("body.loading")) {
+				document.body.className = 'noExtension';
+			}
+		}, 3000);
+
+		try {
+			var htmlCanvas = document.getElementById("starCanvas");
+			var offscreen = htmlCanvas.transferControlToOffscreen();
+
+			var worker = new Worker("../js/starWorker.js");
+		}catch(e) {
+			console.error('starworker not supported');
+
+			var s = document.createElement( 'script' );
+			s.setAttribute( 'src', '../js/star.js' );
+			s.setAttribute( 'type', 'text/javascript' );
+			document.body.appendChild( s );
+			throw e;
+		}
+
+	  	worker.postMessage({
+	  	  canvas: offscreen,
+	  	  canvasState: {
+	  	    width: htmlCanvas.getBoundingClientRect().width,
+	  	    height: htmlCanvas.getBoundingClientRect().height,
+	  	    starFall: window.scrollTop ? window.scrollTop : 0,
+	  	  },
+	  	  mode: 'init',
+	  	}, [offscreen]);
+
+	  	window.onresize = function() {
+	  	  worker.postMessage({
+	  	    canvasState: {
+	  	      width: htmlCanvas.getBoundingClientRect().width,
+	  	      height: htmlCanvas.getBoundingClientRect().height,
+	  	      starFall: window.scrollTop ? window.scrollTop : 0,
+	  	    },
+	  	    mode: 'resize',
+	  	  });
+	  	}
+
+	  	var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+	  	window.onscroll = function() {
+	  	  var scrollTopTemp = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+	  	  var scrollDistance = scrollTop - scrollTopTemp;
+	  	  scrollTop = scrollTopTemp;
+
+	  	  worker.postMessage({
+	  	    scrollDistance: scrollDistance,
+	  	    canvasState: {
+	  	      starFall: window.scrollTop ? window.scrollTop : 0,
+	  	    },
+	  	    mode: 'scrollDistance',
+	  	  });
+	  	}
+
+
+	</script>
+
+</body>
+</html>
