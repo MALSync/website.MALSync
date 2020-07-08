@@ -48,6 +48,17 @@
 			transition: filter 1s;
 		}
 
+		.succ {
+			display: none;
+		}
+		.success .succ {
+			display: block;
+		}
+		.success .loader2-div {
+			border-color: green;
+			background-color: green;
+			transition: border-color 1s;
+		}
 	</style>
 </head>
 <body class="loading">
@@ -59,9 +70,11 @@
 					<img src="../icons/mal-sync-icon.svg" alt="MALSync icon" height="80" width="80" />
 				</div>
 				<h1 class="card-title l">Loading</h1>
-				<h2 class="card-text err" style="font-size: 1rem; font-weight: 400; line-height: 1.5;">
-					<br>
-					Extension or userscript not installed. <a href="/">More info</a>
+				<h2 class="card-text err" style="font-size: 1rem; font-weight: 400; line-height: 1.5; margin-top: 20px;">
+					Extension or userscript not installed. <br>
+					<a href="/" class="btn btn-outline-light" style="margin-top: 20px;">More info</a>
+				</h2>
+				<h2 class="card-text succ" style="font-size: 1rem; font-weight: 400; line-height: 1.5; margin-top: 40px;">
 				</h2>
 			</div>
 		</div>
