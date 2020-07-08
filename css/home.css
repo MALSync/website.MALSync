@@ -7,6 +7,14 @@
 	border-radius: 50%;
 	display: inline-block;
 	background-color: white;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+	-webkit-animation-play-state: paused;
+	animation-play-state: paused;
+}
+.loader2-div:hover{
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
 }
 .loader2-div img{
 	display: block;
@@ -65,4 +73,23 @@
 @keyframes mover {
 	0% { transform: rotate(45deg); bottom:25px; }
 	100% { transform: rotate(45deg); bottom:20px; }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
