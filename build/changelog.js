@@ -68,6 +68,23 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.7.9',
+	data: [
+	'[FEATURE] Add Simplyaweeb',
+	'[FEATURE] Add Animedesu',
+	'[FEATURE] Add Justanime',
+	'[FEATURE] Add Animeunity',
+	'[FEATURE] Add Mangafox',
+	'[FEATURE] Add Mangahere',
+	'[FEATURE] Add Animesimple',
+	'[FEATURE] Add Yayanimes by <a href="https://github.com/Sazzo" target="_blank" rel="noopener">Sazzo</a>',
+	'[FEATURE] Add Animixplay ',
+	'[FEATURE] Add MyAnimeList video page',
+	'[FEATURE] Add MAL api beta implementation',
+	'[TASK] Remove onsite miniMAL for extension',
+	]
+},
+{
 	title: '0.7.8',
 	data: [
 	'[BUGFIX] hotfix MyAnimeList and Anilist onsite lists',
