@@ -68,7 +68,7 @@ function changelog() {
 
 var changelogData = [
 {
-	title: '0.7.10',
+	title: '0.7.11',
 	data: [
 	'[FEATURE] Make pop out window size and position configurable',
 	'[FEATURE] Readd Animevibe',
