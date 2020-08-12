@@ -68,6 +68,15 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.7.10',
+	data: [
+	'[FEATURE] Make pop out window size and position configurable',
+	'[FEATURE] Readd Animevibe',
+	'[SECURITY] Disable background iframes for firefox',
+	'[BUGFIX] Minor fixes to many page implementations',
+	]
+},
+{
 	title: '0.7.9',
 	data: [
 	'[FEATURE] Add Simplyaweeb',
