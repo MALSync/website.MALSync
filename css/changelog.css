@@ -3,6 +3,8 @@
 	/*background-color: #c96f53;*/
 	background-color: black;
 	position: relative;
+	content-visibility: auto;
+    	contain-intrinsic-size: 20000px;
 }
 .pattern{
 	background: url('../background.png');
