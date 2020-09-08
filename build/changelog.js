@@ -68,6 +68,35 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.0',
+	data: [
+	'[FEATURE] Add new progress prediction system',
+	'[TASK] Fix mal description in miniMAL',
+	'[TASK] Add animesimple db support',
+	'[FEATURE] Add Tioanime',
+	'[FEATURE] Add Animeondemand',
+	'[FEATURE] Add Wuxiaworld',
+	'[FEATURE] Add readm',
+	'[FEATURE] Add Edelgarde Scans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener">MrSuperKing143</a>',
+	'[FEATURE] Add Hatigarm Scanz by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener">MrSuperKing143</a>',
+	'[FEATURE] Add KKJ Scans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener">MrSuperKing143</a>',
+	'[FEATURE] Add Kraken Scans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener">MrSuperKing143</a>',
+	'[FEATURE] Add Leviatan Scans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener">MrSuperKing143</a>',
+	'[FEATURE] Add Method Scans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener">MrSuperKing143</a>',
+	'[FEATURE] Add Nonames Scans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener">MrSuperKing143</a>',
+	'[FEATURE] Add Reaper Scans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener">MrSuperKing143</a>',
+	'[FEATURE] Add Secret Scans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener">MrSuperKing143</a>',
+	'[FEATURE] Add SK Scans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener">MrSuperKing143</a>',
+	'[FEATURE] Add Zero Scans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener">MrSuperKing143</a>',
+	'[FEATURE] Add Death Toll Scans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener">MrSuperKing143</a>',
+	'[FEATURE] Add Helvectica Scans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener">MrSuperKing143</a>',
+	'[FEATURE] Add kirei Cake by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener">MrSuperKing143</a>',
+	'[FEATURE] Add Sense Scans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener">MrSuperKing143</a>',
+	'[FEATURE] Add ManhuaPlus by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener">MrSuperKing143</a>',
+	'[TASK] Remove dead pages (kissanime, kissmanga, mangakisa)',
+	]
+}
+{
 	title: '0.7.11',
 	data: [
 	'[FEATURE] Make pop out window size and position configurable',
