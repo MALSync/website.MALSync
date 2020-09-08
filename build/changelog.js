@@ -95,7 +95,7 @@ var changelogData = [
 	'[FEATURE] Add ManhuaPlus by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener">MrSuperKing143</a>',
 	'[TASK] Remove dead pages (kissanime, kissmanga, mangakisa)',
 	]
-}
+},
 {
 	title: '0.7.11',
 	data: [
