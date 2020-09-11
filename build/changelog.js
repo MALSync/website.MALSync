@@ -77,7 +77,9 @@ var changelogData = [
 	'[BUGFIX] Add new 9anime domain',
 	'[TASK] Remove jaiminisbox',
 	'[TASK] Remove krakenscans',
-	],
+	]
+},
+{
 	title: '0.8.0',
 	data: [
 	'[FEATURE] Add new progress prediction system',
