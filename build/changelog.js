@@ -68,6 +68,16 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.1',
+	data: [
+	'[BUGFIX] Fix infinite loop in progress check',
+	'[FEATURE] Add YugenAnime',
+	'[BUGFIX] Fix readm',
+	'[BUGFIX] Add new gogoanime domain',
+	'[BUGFIX] Add new 9anime domain',
+	'[TASK] Remove jaiminisbox',
+	'[TASK] Remove krakenscans',
+	],
 	title: '0.8.0',
 	data: [
 	'[FEATURE] Add new progress prediction system',
