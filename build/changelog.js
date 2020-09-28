@@ -68,6 +68,17 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.2',
+	data: [
+	'[TASK] Support new 9anime design',
+	'[FEATURE] Add animetribes',
+	'[FEATURE] Add burning series by <a href="https://github.com/Whitedoteu" target="_blank" rel="noopener" > Whitedoteu</a>',
+	'[FEATURE] Add okanime by <a href="https://github.com/hsusanoo" target="_blank" rel="noopener" > hsusanoo</a>',
+	'[FEATURE] Add mangasee <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener" > MrSuperKing143</a>',
+	'[FEATURE] Add episode progeress for PTW lists by<a href="https://github.com/Whitedoteu" target="_blank" rel="noopener">Whitedoteu</a>',
+	]
+},
+{
 	title: '0.8.1',
 	data: [
 	'[BUGFIX] Fix infinite loop in progress check',
