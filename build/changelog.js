@@ -68,6 +68,12 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.3',
+	data: [
+	'[BUGFIX] Hotfix episode progeress missing',
+	]
+},
+{
 	title: '0.8.2',
 	data: [
 	'[TASK] Support new 9anime design',
