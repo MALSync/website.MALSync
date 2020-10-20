@@ -68,6 +68,21 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.4',
+	data: [
+	'[FEATURE] Add Relation to other tracking pages if possible',
+	'[TASK] Add rewatch list for anilist on miniMAL #338',
+	'[FEATURE] Add anime/manga remove button to miniMAL',
+	'[FEATURE] Add Animelab by <a href="https://github.com/j-selby" target="_blank" rel="noopener">James</a>',
+	'[FEATURE] Add AnimeOwl',
+	'[FEATURE] Add Fastani',
+	'[FEATURE] Add Pantsubase',
+	'[BUGFIX] Add Vidstream player support',
+	'[BUGFIX] Add new Animevibe domain',
+	'[TASK] Improve Crunchyroll implementation',
+	]
+},
+{
 	title: '0.8.3',
 	data: [
 	'[BUGFIX] Hotfix episode progeress missing',
