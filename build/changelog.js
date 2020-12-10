@@ -68,6 +68,29 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.5',
+	data: [
+		'[FEATURE] Add Support for custom domains <a href="https://github.com/MALSync/MALSync/wiki/Custom-Domains" target="_blank" rel="noopener" >wiki</a>',
+		'[FEATURE] Add Mangasee DB support',
+		'[FEATURE] Add Mangafox DB support',
+		'[FEATURE] Add Animepahe DB support',
+		'[FEATURE] Add Animewho',
+		'[FEATURE] Add Komga <a href="https://github.com/MALSync/MALSync/wiki/Emby-Plex#komga" target="_blank" rel="noopener" >wiki</a>',
+		'[FEATURE] Add Otakustv',
+		'[FEATURE] Add Animedao',
+		'[FEATURE] Add Mangajar ',
+		'[FEATURE] Add Jellyfin <a href="https://github.com/MALSync/MALSync/wiki/Emby-Plex#jellyfin" target="_blank" rel="noopener" >wiki</a>',
+		'[FEATURE] Add An1me by <a href="https://github.com/Senjar" target="_blank" rel="noopener" >Senjar</a>',
+		'[FEATURE] Add Asurascans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener" >MrSuperKing143</a>',
+		'[FEATURE] Add Merakiscans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener" >MrSuperKing143</a>',
+		'[FEATURE] Add Naniscans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener" >MrSuperKing143</a>',
+		'[FEATURE] Add fullscreen notification support',
+		'[TASK] Use different content scripts per page',
+		'[BUGFIX] Fix local import and export #512',
+		'[BUGFIX] Fix kitsu decimal rounding',
+	]
+}
+{
 	title: '0.8.4',
 	data: [
 	'[FEATURE] Add Relation to other tracking pages if possible',
