@@ -89,7 +89,7 @@ var changelogData = [
 		'[BUGFIX] Fix local import and export #512',
 		'[BUGFIX] Fix kitsu decimal rounding',
 	]
-}
+},
 {
 	title: '0.8.4',
 	data: [
