@@ -68,6 +68,21 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.6',
+	data: [
+		'[FEATURE] Auto switch theme according to OS',
+		'[FEATURE] Add episode/chapter/volume increase button to miniMAL',
+		'[FEATURE] Add database support for yugenanime',
+		'[FEATURE] Add AnimesHD',
+		'[FEATURE] Add NonstopScans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener" >MrSuperKing143</a>',
+		'[FEATURE] Add fumetsu by <a href="https://github.com/jonaszor" target="_blank" rel="noopener" >Jonaszor</a>',
+		'[FEATURE] Add toonily by <a href="https://github.com/draxx132" target="_blank" rel="noopener" >draxx132</a>',
+		'[FEATURE] Add frixysubs by <a href="https://github.com/jonaszor" target="_blank" rel="noopener" >Jonaszor</a>',
+		'[FEATURE] Add animesuge',
+		'[TASK] Drop anime4you',
+	]
+},
+{
 	title: '0.8.5',
 	data: [
 		'[FEATURE] Add Support for custom domains <a href="https://github.com/MALSync/MALSync/wiki/Custom-Domains" target="_blank" rel="noopener" >wiki</a>',
