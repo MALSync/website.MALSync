@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MALSync PWA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2b2b2b">
+    <link rel="manifest" href="./manifest.json">
+    <script>
+        window.onload = () => {
+            'use strict';
+
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('./sw.js');
+            }
+        }
+    </script>
+
+<body style="padding: 0; margin: 0; overflow: hidden;">
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "MALSync",
+  "short_name": "MALSync",
+  "lang": "en-US",
+  "start_url": "/pwa/",
+  "display": "standalone",
+  "background_color": "black",
+  "icons": [
+        {
+            "src": "./../icons/mal-sync-icon.svg",
+            "sizes": "any"
+        }
+    ]
+}
