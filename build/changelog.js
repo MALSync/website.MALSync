@@ -68,6 +68,25 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.7',
+	data: [
+		'[FEATURE] Save cover images in local sync',
+		'[FEATURE] Support taiga\'s <a href="https://github.com/erengy/anime-relations" target="_blank" rel="noopener" >anime relation</a> ',
+		'[FEATURE] Add notifications when a new episode/chapter gets released',
+		'[FEATURE] Add button links to the mal entry in the discord rich presence',
+		'[BUGFIX] Fix MALSync shortcuts sometimes not working',
+		'[FEATURE] Add MangaHub by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener" >MrSuperKing143</a>',
+		'[BUGFIX] Add new gogoanime domains',
+		'[BUGFIX] Change SecretScans to LynxScans',
+		'[BUGFIX] Fix AnimeDao',
+		'[BUGFIX] Fix Netflix',
+		'[BUGFIX] Fix Animeowl',
+		'[TASK] Remove Fastani',
+		'[TASK] Remove Helvetica',
+		'[TASK] Remove KKJ Scans',
+	]
+},
+{
 	title: '0.8.6',
 	data: [
 		'[FEATURE] Auto switch theme according to OS',
