@@ -12,6 +12,8 @@ async function main() {
 		await saveImage(el.name+'.png', 'https://www.google.com/s2/favicons?domain='+el.domain);
 	}
 
+	res = await filterJsonByFiles(pages);
+
 	fs.writeFileSync('pages/pages.json', JSON.stringify(res, null, 2));
 	console.log('Done');
 }
@@ -30,6 +32,17 @@ async function getJson() {
 			}
 		});
 	})
+}
+
+async function filterJsonByFiles(json) {
+	var res = [];
+	for(let i in json) {
+		let el = json[i];
+		if (fs.existsSync('pages/'+el.name+'.png')) {
+			res.push(el);
+		}
+	}
+	return res;
 }
 
 async function filterJson(json) {
