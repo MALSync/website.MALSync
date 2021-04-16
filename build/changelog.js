@@ -68,6 +68,21 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.8',
+	data: [
+		'[FEATURE] Add sorting to lists',
+		'[TASK] Remove old MAL implementation and replace it with the api',
+		'[FEATURE] Add Crunchyroll Beta support',
+		'[BUGFIX] Fix Plex implementation',
+		'[FEATURE] Add Catmanga',
+		'[FEATURE] Add Japanread by <a href="https://github.com/NatsuDzn" target="_blank" rel="noopener" >NatsuDzn</a>',
+		'[FEATURE] Add KangaryuTeam by <a href="https://github.com/NatsuDzn" target="_blank" rel="noopener" >NatsuDzn</a>',
+		'[FEATURE] Add AnimeShitai',
+		'[FEATURE] Add ComicK',
+		'[TASK] Switch discord presence to playing anime or playing manga instead of playing malsync',
+	]
+},
+{
 	title: '0.8.7',
 	data: [
 		'[FEATURE] Save cover images in local sync',
