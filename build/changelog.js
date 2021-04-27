@@ -68,6 +68,15 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.9',
+	data: [
+		'[BUGFIX] Fix MAL api search ',
+		'[FEATURE] Check if episode is a filler',
+		'[TASK] Remove Funimation',
+		'[TASK] Remove Aniwatch',
+	]
+},
+{
 	title: '0.8.8',
 	data: [
 		'[FEATURE] Add sorting to lists',
