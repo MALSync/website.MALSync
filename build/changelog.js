@@ -68,6 +68,27 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.10',
+	data: [
+		'[FEATURE] Add Zoro',
+		'[FEATURE] Add Kitsune.tv by <a href="https://github.com/MeguminSama" target="_blank" rel="noopener" >MeguminSama</a>',
+		'[FEATURE] Add MangaSushi by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener" >MrSuperKing143</a>',
+		'[FEATURE] Add ArangScans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener" >MrSuperKing143</a>',
+		'[FEATURE] Add HunlightScans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener" >MrSuperKing143</a>',
+		'[FEATURE] Add TritiniaScans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener" >MrSuperKing143</a>',
+		'[FEATURE] Add ReadManhua by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener" >MrSuperKing143</a>',
+		'[FEATURE] Add FlameScans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener" >MrSuperKing143</a>',
+		'[FEATURE] Add ImmortalUpdates by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener" >MrSuperKing143</a>',
+		'[FEATURE] Support anilist only entries in the database',
+		'[BUGFIX] Fix Manganelo',
+		'[BUGFIX] Fix Funimation',
+		'[BUGFIX] Fix Crunchyroll',
+		'[BUGFIX] Fix Gogoanime',
+		'[BUGFIX] Fix 9anime',
+		'[BUGFIX] Fix Catmanga',
+	]
+},
+{
 	title: '0.8.9',
 	data: [
 		'[BUGFIX] Fix MAL api search ',
