@@ -68,6 +68,16 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.11',
+	data: [
+		'[BUGFIX] Fix Mangadex',
+		'[FEATURE] Add Furyosquad by <a href="https://github.com/NatsuDzn" target="_blank" rel="noopener" >NatsuDzn</a>',
+		'[FEATURE] Add AnimesOnline',
+		'[FEATURE] Add lhtranslation',
+		'[TASK] Add Thai translation by <a href="https://github.com/F1rstStr0ke" target="_blank" rel="noopener" >F1rstStr0ke</a>',
+	]
+},
+{
 	title: '0.8.10',
 	data: [
 		'[FEATURE] Add Zoro',
