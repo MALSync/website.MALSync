@@ -68,6 +68,18 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.12',
+	data: [
+
+		'[FEATURE] Add Cubari Support',
+		'[FEATURE] Complete rework of the quicksearch/direct link system with support for custom quicksearch links',
+		'[FEATURE] Use a more solid favicon system',
+		'[FEATURE] Add a PWA for the extension/userscript <a href="https://malsync.moe/pwa/" target="_blank" rel="noopener" >https://malsync.moe/pwa/</a>',
+		'[BUGFIX] Add new gogoanime.pe domain',
+		'[BUGFIX] Add new kickassanime.ro domain',
+	]
+},
+{
 	title: '0.8.11',
 	data: [
 		'[BUGFIX] Fix Mangadex',
