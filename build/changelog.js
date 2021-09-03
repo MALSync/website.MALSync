@@ -68,6 +68,20 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.14',
+	data: [
+		'[FEATURE] Streaming links order changeable',
+		'[FEATURE] Add BlueSolo by <a href="https://github.com/NatsuDzn" target="_blank" rel="noopener" >NatsuDzn</a>',
+		'[FEATURE] Add Shiro by <a href="https://github.com/ty-coon" target="_blank" rel="noopener" >tycoon</a>',
+		'[FEATURE] Add mangas-origines.fr by <a href="https://github.com/TriForMine" target="_blank" rel="noopener" >TriForMine</a>',
+		'[FEATURE] Add Tenshi',
+		'[FEATURE] Sort mangas by unread chapters #811',
+		'[TASK] Remove 4Anime',
+		'[TASK] Remove Animefreak',
+		'[TASK] Rename Branitube to Aniyan',
+	]
+},
+{
 	title: '0.8.12',
 	data: [
 
