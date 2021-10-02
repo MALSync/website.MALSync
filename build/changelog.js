@@ -73,7 +73,7 @@ var changelogData = [
 		'[FEATURE] Include local storage entries in search #845',
 		'[FEATURE] Current state of an entry is displayed in search results',
 		'[FEATURE] Add DisasterScans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener" >MrSuperKing143</a>',
-		'[FEATURE] Add Anistream by Flumuffel<a href="https://github.com/Flumuffel" target="_blank" rel="noopener" >Flumuffel</a>',
+		'[FEATURE] Add Anistream by <a href="https://github.com/Flumuffel" target="_blank" rel="noopener" >Flumuffel</a>',
 		'[FEATURE] Add DynastyScans',
 		'[TASK] Support new MAL opening and ending theme',
 		'[TASK] Change dubbedanime to 1anime',
