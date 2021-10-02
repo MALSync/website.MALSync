@@ -68,6 +68,27 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.15',
+	data: [
+		'[FEATURE] Include local storage entries in search #845',
+		'[FEATURE] Current state of an entry is displayed in search results',
+		'[FEATURE] Add DisasterScans by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener" >MrSuperKing143</a>',
+		'[FEATURE] Add Anistream by Flumuffel<a href="https://github.com/Flumuffel" target="_blank" rel="noopener" >Flumuffel</a>',
+		'[FEATURE] Add DynastyScans',
+		'[TASK] Support new MAL opening and ending theme',
+		'[TASK] Change dubbedanime to 1anime',
+		'[TASK] Add new animeunity domain',
+		'[TASK] Add new 9anime domain',
+		'[TASK] Add new simplyaweeb domain',
+		'[TASK] Add new yugenanime domain',
+		'[BUGFIX] Fix netflix',
+		'[BUGFIX] Fix Funimation',
+		'[BUGFIX] Fix Mangapark #896',
+		'[BUGFIX] Fix Reaperscans',
+		'[BUGFIX] Fix lhtranslation',
+	]
+},
+{
 	title: '0.8.14',
 	data: [
 		'[FEATURE] Streaming links order changeable',
