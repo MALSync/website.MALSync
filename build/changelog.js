@@ -68,6 +68,21 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.16',
+	data: [
+		'[FEATURE] Add alternative positions for the quicksearch on MAL and Anilist',
+		'[FEATURE] Add Sugar Babies by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener" >MrSuperKing143</a>',
+		'[FEATURE] Add Alpha Scans  by <a href="https://github.com/MrSuperKing143" target="_blank" rel="noopener" >MrSuperKing143</a>',
+		'[FEATURE] Add Anicloud by <a href="https://github.com/N1kl8s" target="_blank" rel="noopener" >N1kl8s</a>',
+		'[BUGFIX] Fix ReaperScans ',
+		'[BUGFIX] Fix AsuraScans ',
+		'[BUGFIX] Fix LeviatanScans',
+		'[BUGFIX] Fix Netflix ',
+		'[TASK] Remove AnimeUltima ',
+		'[TASK] Remove AnimeFlix',
+	]
+},
+{
 	title: '0.8.15',
 	data: [
 		'[FEATURE] Include local storage entries in search #845',
