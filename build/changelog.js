@@ -68,6 +68,18 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.17',
+	data: [
+		'[FEATURE] Add Mangareader',
+		'[FEATURE] Add bilibiliComics',
+		'[FEATURE] Add BetterAnime by <a href="https://github.com/GMkonan" target="_blank" rel="noopener" >GMkonan</a>',
+		'[FEATURE] Add AMA Scan by <a href="https://github.com/uKaigo" target="_blank" rel="noopener" >uKaigo</a>',
+		'[TASK] Remove Catmanga',
+		'[TASK] Add new gogoanime domains',
+		'[TASK] Add new animesuge domain',
+	]
+},
+{
 	title: '0.8.16',
 	data: [
 		'[FEATURE] Add alternative positions for the quicksearch on MAL and Anilist',
