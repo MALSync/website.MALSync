@@ -46,12 +46,11 @@ async function filterJsonByFiles(json) {
 }
 
 async function filterJson(json) {
-	const emptyImg = await getImage('https://www.google.com/s2/favicons?domain=https://sssssss.sss');
 	var res = [];
 	for(let i in json) {
 		let el = json[i];
 		var img = await getImage('https://www.google.com/s2/favicons?domain='+el.domain);
-		if(img === emptyImg) {
+		if(img === 404) {
 			console.log(el.name, 'has no favicon');
 			continue;
 		}
@@ -71,7 +70,12 @@ function getImage(url) {
 			}
 			if(response && response.statusCode === 200) {
 				resolve(body);
+				return;
+			} else if(response.statusCode === 404) {
+				resolve(404);
+				return;
 			}
+			reject(url);
 		});
 	})
 }
