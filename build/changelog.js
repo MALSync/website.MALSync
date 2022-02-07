@@ -68,6 +68,21 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.18',
+	data: [
+		'[FEATURE] Add AnimeOnsen by <a href="https://github.com/mist8kengas" target="_blank" rel="noopener" >mist8kengas</a>',
+		'[FEATURE] Add Anilist update UI',
+		'[FEATURE] Show series cover in discord presence',
+		'[TASK] Split notification option into anime and manga',
+		'[TASK] Remove KangaryuTeam',
+		'[TASK] Remove AnimeOnDemand',
+		'[TASK] Remove Branittube',
+		'[TASK] Remove Animeowl',
+		'[TASK] Remove Animevibe',
+		'[TASK] Remove AnimeLab',
+	]
+},
+{
 	title: '0.8.17',
 	data: [
 		'[FEATURE] Add Mangareader',
