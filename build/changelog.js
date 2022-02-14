@@ -68,6 +68,14 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.19',
+	data: [
+		'[BUGFIX] Hotfix notification options',
+		'[TASK] Remove Animesimple',
+		'[TASK] Remove Justanime',
+	]
+},
+{
 	title: '0.8.18',
 	data: [
 		'[FEATURE] Add AnimeOnsen by <a href="https://github.com/mist8kengas" target="_blank" rel="noopener" >mist8kengas</a>',
