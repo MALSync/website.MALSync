@@ -68,6 +68,15 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.20',
+	data: [
+		'[FEATURE] Add Animetoast by <a href="https://github.com/snoweuph" target="_blank" rel="noopener" >Snoweuph</a>',
+		'[FEATURE] Add Puray by <a href="https://github.com/Lyem" target="_blank" rel="noopener" >Lyem</a>',
+		'[TASK] Improve missing domain permissions handling',
+		'[TASK] Update to vue3',
+	]
+},
+{
 	title: '0.8.19',
 	data: [
 		'[BUGFIX] Hotfix notification options',
