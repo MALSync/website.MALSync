@@ -68,6 +68,24 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.21',
+	data: [
+		'[FEATURE] Add LuminousScans by <a href="https://github.com/mac5617" target="_blank" rel="noopener" >Michael Campbell</a>',
+		'[FEATURE] Add RealmScans by <a href="https://github.com/mac5617" target="_blank" rel="noopener" >Michael Campbell</a>',
+		'[FEATURE] Add Bentomanga by <a href="https://github.com/NatsuDzn" target="_blank" rel="noopener" >NatsuDzn</a>',
+		'[FEATURE] Add MuitoManga by <a href="https://github.com/uKaigo" target="_blank" rel="noopener" >uKaigo</a>',
+		'[BUGFIX] Fix Animepahe',
+		'[BUGFIX] Fix Crunchyroll beta',
+		'[TASK] Remove AnimeKisa',
+		'[TASK] Remove EdelgardeScans',
+		'[TASK] Remove HatigarmScanz',
+		'[TASK] Remove MethodScans',
+		'[TASK] Remove NonamesScans',
+		'[TASK] Remove Pantsubase',
+		'[TASK] Remove MerakiScans',
+	]
+},
+{
 	title: '0.8.20',
 	data: [
 		'[FEATURE] Add Animetoast by <a href="https://github.com/snoweuph" target="_blank" rel="noopener" >Snoweuph</a>',
