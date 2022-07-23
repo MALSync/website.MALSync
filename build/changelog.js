@@ -68,6 +68,16 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.8.22',
+	data: [
+		'[BUGFIX] Fix 9anime',
+		'[FEATURE] Add Mangabuddy by <a href="https://github.com/mac5617" target="_blank" rel="noopener" >Michael Campbell</a>',
+		'[FEATURE] Add Animeworld by <a href="https://github.com/n4y0n" target="_blank" rel="noopener" >Ernesto Montada</a>',
+		'[FEATURE] Add Manhuafast by <a href="https://github.com/Enni83" target="_blank" rel="noopener" >Enni83</a>',
+		'[TASK] Remove Dreamsub',
+	]
+},
+{
 	title: '0.8.21',
 	data: [
 		'[FEATURE] Add LuminousScans by <a href="https://github.com/mac5617" target="_blank" rel="noopener" >Michael Campbell</a>',
