@@ -68,6 +68,19 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.9.0',
+	data: [
+		'[FEATURE] New popup design',
+		'[FEATURE] Add Vostfree by <a href="https://github.com/ptlc8" target="_blank" rel="noopener">Ambi</a>',
+		'[FEATURE] Add Kaguya by <a href="https://github.com/hoangvu12" target="_blank" rel="noopener">Vu Nguyen</a>',
+		'[FEATURE] Add void-scans by <a href="https://github.com/henrik9999" target="_blank" rel="noopener">orell</a>',
+		'[FEATURE] Add ToonAnime by <a href="https://github.com/TriForMine" target="_blank" rel="noopener" >TriForMine</a>',
+		'[FEATURE] Add adkami by <a href="https://github.com/TriForMine" target="_blank" rel="noopener" >TriForMine</a>',
+		'[TASK] Discord presence uses provider url #1314',
+		'[TASK] Remap floating button to correction',
+	]
+},
+{
 	title: '0.8.22',
 	data: [
 		'[BUGFIX] Fix 9anime',
