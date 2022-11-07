@@ -38,9 +38,8 @@
 .btn {
 	display: inline-block;
 	vertical-align: middle;
-	border: 1px solid transparent;
+	border: 1px solid #f8f9fa;
 	padding: .375rem .75rem;
-	border-color: #f8f9fa;
 	cursor: pointer;
 	text-decoration: none;
 	color: white;

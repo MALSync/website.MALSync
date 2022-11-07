@@ -1,31 +1,68 @@
-const path = require('path');
+const { Canvas, Image } = require('canvas');
 const fs = require('fs');
-
+const path = require('path');
 const pages = require('../pages/pages.json');
 
-favicons();
-function favicons() {
-	let html = '';
-	for (const i in pages) {
-		let el = pages[i];
-		html += `
-		<img title="${el.name}" alt="${el.name}" src="pages/${el.name}.png" height="16" width="16">
-		`;
-	}
+start();
+async function start() {
+	const collage = await createCollage(pages);
+  const out = fs.createWriteStream('screenshots/pages.png')
+  collage.pipe(out)
+}
 
-	const descFile = path.join(__dirname, '../index.html');
-	fs.readFile(descFile, 'utf8', function(err, data) {
-	  if (err) {
-	    return console.log(err);
-	  }
-	  const result = data.replace(/<!--pages-->((.|\n|\r)*)<!--\/pages-->/g, `<!--pages-->\n${html}\n<!--/pages-->`);
+async function createCollage(pages) {
+  const IMAGES_PER_ROW = 25;
 
-	  fs.writeFile(descFile, result, 'utf8', function(err) {
-	    if (err) return console.log(err);
-	  });
-	});
+  const options = {
+    width: IMAGES_PER_ROW, // number of images per row
+    height: Math.ceil(pages.length / IMAGES_PER_ROW), // number of images per column
+    imageWidth: 32,
+    imageHeight: 32,
+    backgroundColor: 'transparent',
+    spacingX: 10,
+    spacingY: 10,
+  };
 
+  const headerHeight = 0;
+  const canvasWidth = options.width * options.imageWidth + (options.width - 1) * options.spacingX;
+  const canvasHeight = headerHeight + options.height * (options.imageHeight + options.spacingY);
+  const canvas = new Canvas(canvasWidth, canvasHeight);
 
-	return;
+  const ctx = canvas.getContext('2d');
+  ctx.fillStyle = options.backgroundColor;
+  ctx.fillRect(0, 0, canvasWidth, canvasHeight);
 
+  const downloadImages = await Promise.all(
+    pages.map(async page => {
+      const imageData = await downloadPhoto(page.name + '.png');
+      return {
+        image: imageData,
+        ...page,
+      };
+    }),
+  );
+
+  downloadImages.forEach((element, i) => {
+    const img = new Image();
+    img.src = element.image;
+
+    const imgX = (i % options.width) * (options.imageWidth + options.spacingX);
+    const imgY = Math.floor(i / options.width) * (options.imageHeight + options.spacingY);
+
+    const hRatio = options.imageWidth / img.width;
+    const vRatio = options.imageHeight / img.height;
+    const ratio = Math.min(hRatio, vRatio);
+    const centerShiftX = (options.imageWidth - img.width * ratio) / 2;
+    const centerShiftY = options.imageHeight - img.height * ratio;
+
+    ctx.drawImage(img, imgX + centerShiftX, imgY + headerHeight + centerShiftY, img.width * ratio, img.height * ratio);
+  });
+
+  return canvas.createPNGStream({
+    compressionLevel: 0
+  });
+}
+
+function downloadPhoto(call) {
+  return fs.readFileSync(path.join(__dirname, `../pages/${call}`));
 }

@@ -9,7 +9,7 @@ async function main() {
 
 	for(let i in res) {
 		let el = res[i];
-		await saveImage(el.name+'.png', 'https://www.google.com/s2/favicons?domain='+el.domain);
+		await saveImage(el.name+'.png', 'https://www.google.com/s2/favicons?domain='+el.domain + "&sz=32");
 	}
 
 	res = await filterJsonByFiles(pages);

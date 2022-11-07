@@ -78,4 +78,35 @@ function resize(width, output, input) {
 	        	return;
 	        }
 	    })
+
+	//Resize
+	sharp(input)
+		.avif()
+		.resize(width, null)
+		.sharpen()
+		.toFile(output.replace('.png', '.avif'),
+		function(err){
+			if(err){
+				console.log("Error at reducing size / converting picture : ")
+				console.log(err)
+				console.log(input);
+				console.log(output);
+				return;
+			}
+		})
+
+	sharp(input)
+	    .avif()
+	    .resize(width*2, null)
+	    .sharpen()
+	    .toFile(output.replace('.png', '-2x.avif'),
+	    function(err){
+	        if(err){
+	        	console.log("Error at reducing size / converting picture : ")
+	        	console.log(err)
+	        	console.log(input);
+	        	console.log(output);
+	        	return;
+	        }
+	    })
 }

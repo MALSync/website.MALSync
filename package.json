@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build:images && npm run build:favicons && npm run build:pages && npm run build:changelog && npm run build:contributer",
+    "build": "npm run build:favicons && npm run build:pages && npm run build:images && npm run build:changelog && npm run build:contributer && npm run build:css",
     "build:images": "node build/imageResize.js",
     "build:pages": "node build/pages.js",
     "build:changelog": "node build/changelog.js",
     "build:contributer": "node build/contributer.js",
-    "build:favicons": "node build/getFavicons.js"
+    "build:favicons": "node build/getFavicons.js",
+    "build:css": "node build/css.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,8 @@
   },
   "homepage": "https://github.com/MALSync/website.MALSync#readme",
   "dependencies": {
+    "canvas": "^2.10.2",
+    "csso": "^5.0.5",
     "request": "^2.88.2",
     "sharp": "^0.30.5"
   }
