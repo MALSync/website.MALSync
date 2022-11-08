@@ -5,17 +5,19 @@ const pages = require('../pages/pages.json');
 
 start();
 async function start() {
-	const collage = await createCollage(pages);
-  const out = fs.createWriteStream('screenshots/pages.png')
-  collage.pipe(out)
+  const collage1 = await createCollage(pages, 25);
+  const out1 = fs.createWriteStream('screenshots/pages.png')
+  collage1.pipe(out1)
+
+  const collage2 = await createCollage(pages, 10);
+  const out2 = fs.createWriteStream('screenshots/pages-mobile.png')
+  collage2.pipe(out2)
 }
 
-async function createCollage(pages) {
-  const IMAGES_PER_ROW = 25;
-
+async function createCollage(pages, imagesPerRow) {
   const options = {
-    width: IMAGES_PER_ROW, // number of images per row
-    height: Math.ceil(pages.length / IMAGES_PER_ROW), // number of images per column
+    width: imagesPerRow, // number of images per row
+    height: Math.ceil(pages.length / imagesPerRow), // number of images per column
     imageWidth: 32,
     imageHeight: 32,
     backgroundColor: 'transparent',
