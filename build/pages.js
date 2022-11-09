@@ -1,7 +1,7 @@
 const { Canvas, Image } = require('canvas');
 const fs = require('fs');
 const path = require('path');
-const pages = require('../pages/pages.json');
+const pages = require('../pages/pages32.json');
 
 start();
 async function start() {
@@ -36,7 +36,7 @@ async function createCollage(pages, imagesPerRow) {
 
   const downloadImages = await Promise.all(
     pages.map(async page => {
-      const imageData = await downloadPhoto(page.name + '.png');
+      const imageData = await downloadPhoto(page.name + '_32.png');
       return {
         image: imageData,
         ...page,
