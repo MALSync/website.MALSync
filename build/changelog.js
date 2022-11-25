@@ -68,6 +68,14 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.9.1',
+	data: [
+		'[FEATURE] On some pages manga updates now after reading 90% of the pages',
+		'[BUGFIX] Fix wrong title language for anilist #1416',
+		'[BUGFIX] Fix PWA not loading for some people',
+	]
+},
+{
 	title: '0.9.0',
 	data: [
 		'[FEATURE] New popup design',
