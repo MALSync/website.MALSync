@@ -550,6 +550,11 @@
     "name": "Aniworld"
   },
   {
+    "domain": "https://betteranime.net",
+    "type": "anime",
+    "name": "BetterAnime"
+  },
+  {
     "domain": "https://www.bilibilicomics.com",
     "type": "manga",
     "name": "BilibiliComics"
