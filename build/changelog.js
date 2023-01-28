@@ -68,6 +68,17 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.9.2',
+	data: [
+		'[FEATURE] Add isekaiscan by <a href="https://github.com/zamounet" target="_blank" rel="noopener">zamounet</a>',
+		'[FEATURE] Add aniyan by <a href="https://github.com/Th1rty" target="_blank" rel="noopener">Th1rty</a>',
+		'[FEATURE] Add ADN by <a href="https://github.com/Skytowz" target="_blank" rel="noopener">Skytowz</a>',
+		'[FEATURE] Add hdrezka',
+		'[FEATURE] Add Shikimori tracking support',
+		'[BUGFIX] Fix broken dropdowns in firefox #1566',
+	]
+},
+{
 	title: '0.9.1',
 	data: [
 		'[FEATURE] On some pages manga updates now after reading 90% of the pages',
