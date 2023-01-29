@@ -75,11 +75,6 @@
     "name": "KickAssAnime"
   },
   {
-    "domain": "https://animeindo.net",
-    "type": "anime",
-    "name": "AnimeIndo"
-  },
-  {
     "domain": "https://shinden.pl",
     "type": "anime",
     "name": "Shinden"
@@ -100,7 +95,7 @@
     "name": "VIZ"
   },
   {
-    "domain": "https://www.neko-sama.fr",
+    "domain": "https://neko-sama.fr",
     "type": "anime",
     "name": "NekoSama"
   },
@@ -265,11 +260,6 @@
     "name": "AnimeId"
   },
   {
-    "domain": "https://animixplay.to",
-    "type": "anime",
-    "name": "AniMixPlay"
-  },
-  {
     "domain": "https://myanimelist.net",
     "type": "anime",
     "name": "MyAnimeList"
@@ -323,11 +313,6 @@
     "domain": "https://zeroscans.com",
     "type": "manga",
     "name": "ZeroScans"
-  },
-  {
-    "domain": "https://reader.kireicake.com",
-    "type": "manga",
-    "name": "KireiCake"
   },
   {
     "domain": "https://sensescans.com",
@@ -450,7 +435,7 @@
     "name": "MangaHub"
   },
   {
-    "domain": "https://comick.fun",
+    "domain": "https://comick.app",
     "type": "manga",
     "name": "ComicK"
   },
@@ -510,11 +495,6 @@
     "name": "MangasOrigines"
   },
   {
-    "domain": "https://tenshi.moe",
-    "type": "anime",
-    "name": "tenshi"
-  },
-  {
     "domain": "https://shiro.is",
     "type": "anime",
     "name": "shiro"
@@ -538,11 +518,6 @@
     "domain": "https://sugarbbscan.com/",
     "type": "manga",
     "name": "SugarBabies"
-  },
-  {
-    "domain": "https://Alpha-Scans.org",
-    "type": "manga",
-    "name": "AlphaScans"
   },
   {
     "domain": "https://aniworld.to",
@@ -628,5 +603,25 @@
     "domain": "https://kaguya.live",
     "type": "anime",
     "name": "Kaguya"
+  },
+  {
+    "domain": "https://hdrezka.ag",
+    "type": "anime",
+    "name": "Hdrezka"
+  },
+  {
+    "domain": "https://animationdigitalnetwork.fr",
+    "type": "anime",
+    "name": "ADN"
+  },
+  {
+    "domain": "https://aniyan.net",
+    "type": "anime",
+    "name": "Aniyan"
+  },
+  {
+    "domain": "https://isekaiscan.com",
+    "type": "manga",
+    "name": "Isekaiscan"
   }
 ]
