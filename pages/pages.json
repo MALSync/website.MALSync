@@ -305,6 +305,11 @@
     "name": "ReaperScans"
   },
   {
+    "domain": "https://lynxscans.com",
+    "type": "manga",
+    "name": "LynxScans"
+  },
+  {
     "domain": "https://skscans.com",
     "type": "manga",
     "name": "SKScans"
