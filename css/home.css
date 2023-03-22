@@ -49,6 +49,9 @@
 	background-color: #f8f9fa;
 	border-color: #f8f9fa;
 }
+.btn:hover img {
+	filter: invert(1);
+}
 
 .arrow {
 	position: absolute;
