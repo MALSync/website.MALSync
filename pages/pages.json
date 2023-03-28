@@ -280,6 +280,11 @@
     "name": "MangaFox"
   },
   {
+    "domain": "https://yayanimes.net",
+    "type": "anime",
+    "name": "YayAnimes"
+  },
+  {
     "domain": "https://desu-online.pl",
     "type": "anime",
     "name": "DesuOnline"
