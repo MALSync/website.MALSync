@@ -68,6 +68,19 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.9.3',
+	data: [
+		'[FEATURE] Add anilist reviews, recommendations and authors to minimal #1608',
+		'[TASK] Add jellyfin movie support #1680',
+		'[FEATURE] Add MangaFire by <a href="https://github.com/Geistful" target="_blank" rel="noopener" >Geistful</a>',
+		'[FEATURE] Add Pactedanime',
+		'[FEATURE] Add ProjectSuki by <a href="https://github.com/mac5617" target="_blank" rel="noopener" >Michael Campbell</a>',
+		'[FEATURE] Add franime by <a href="https://github.com/TriForMine" target="_blank" rel="noopener" >TriForMine</a>',
+		'[FEATURE] Add fmteam by <a href="https://github.com/NatsuDzn" target="_blank" rel="noopener" >NatsuDzn</a>',
+		'[FEATURE] Add Animelon by <a href="https://github.com/supersayan" target="_blank" rel="noopener" >supersayan</a>',
+	]
+},
+{
 	title: '0.9.2',
 	data: [
 		'[FEATURE] Add isekaiscan by <a href="https://github.com/zamounet" target="_blank" rel="noopener">zamounet</a>',
