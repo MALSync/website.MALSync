@@ -70,7 +70,7 @@
     "name": "Aniflix"
   },
   {
-    "domain": "https://www.kickassanime.ro",
+    "domain": "https://kaas.am",
     "type": "anime",
     "name": "KickAssAnime"
   },
@@ -138,11 +138,6 @@
     "domain": "https://www.japscan.ws",
     "type": "manga",
     "name": "JapScan"
-  },
-  {
-    "domain": "https://goyabu.com",
-    "type": "anime",
-    "name": "Goyabu"
   },
   {
     "domain": "https://animes.vision",
@@ -245,11 +240,6 @@
     "name": "AnimeStreamingFR"
   },
   {
-    "domain": "https://scantrad.net",
-    "type": "manga",
-    "name": "Scantrad"
-  },
-  {
     "domain": "https://furyosquad.com/",
     "type": "manga",
     "name": "Furyosquad"
@@ -288,11 +278,6 @@
     "domain": "https://desu-online.pl",
     "type": "anime",
     "name": "DesuOnline"
-  },
-  {
-    "domain": "https://simplyaweeb.to",
-    "type": "anime",
-    "name": "Simplyaweeb"
   },
   {
     "domain": "https://wuxiaworld.site",
@@ -633,5 +618,30 @@
     "domain": "https://isekaiscan.com",
     "type": "manga",
     "name": "Isekaiscan"
+  },
+  {
+    "domain": "https://franime.fr",
+    "type": "anime",
+    "name": "FRAnime"
+  },
+  {
+    "domain": "https://www.animelon.com",
+    "type": "anime",
+    "name": "Animelon"
+  },
+  {
+    "domain": "https://mangafire.to",
+    "type": "manga",
+    "name": "MangaFire"
+  },
+  {
+    "domain": "https://pactedanime.com",
+    "type": "anime",
+    "name": "Pactedanime"
+  },
+  {
+    "domain": "https://projectsuki.com",
+    "type": "manga",
+    "name": "projectsuki"
   }
 ]
