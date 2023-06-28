@@ -68,6 +68,18 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.9.4',
+	data: [
+		'[Feature] Add new install page',
+		'[Feature] Add animeflix',
+		'[Feature] Add animeonegai by <a href="https://github.com/IJCS" target="_blank" rel="noopener" >IJCS</a>',
+		'[Feature] Add anime-sama by <a href="https://github.com/Skytowz" target="_blank" rel="noopener">Skytowz</a>',
+		'[Feature] Add 1stkissmanga by <a href="https://github.com/Hanawa02" target="_blank" rel="noopener">Hanawa02</a>',
+		'[Feature] Add AnimeKO by <a href="https://github.com/akumachi" target="_blank" rel="noopener">akumachi</a>',
+		'[Feature] Add docchi by <a href="https://github.com/anKordii" target="_blank" rel="noopener">anKordii</a>',
+	]
+},
+{
 	title: '0.9.3',
 	data: [
 		'[FEATURE] Add anilist reviews, recommendations and authors to minimal #1608',
