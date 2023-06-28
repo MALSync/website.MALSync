@@ -210,6 +210,11 @@
     "name": "OtakuFR"
   },
   {
+    "domain": "https://samehadaku.vip",
+    "type": "anime",
+    "name": "Samehadaku"
+  },
+  {
     "domain": "https://www.tsukimangas.com",
     "type": "manga",
     "name": "Tsuki Mangás"
