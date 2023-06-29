@@ -25,11 +25,6 @@
     "name": "Gogoanime"
   },
   {
-    "domain": "https://twist.moe",
-    "type": "anime",
-    "name": "Twistmoe"
-  },
-  {
     "domain": "https://www.turkanime.co",
     "type": "anime",
     "name": "TurkAnime"
@@ -117,7 +112,7 @@
   {
     "domain": "https://mangalivre.net",
     "type": "manga",
-    "name": "mangalivre"
+    "name": "Mangá Livre"
   },
   {
     "domain": "https://lectortmo.com",
@@ -127,7 +122,7 @@
   {
     "domain": "https://unionleitor.top",
     "type": "manga",
-    "name": "unionmangas"
+    "name": "Union Mangás"
   },
   {
     "domain": "https://mangaplus.shueisha.co.jp",
@@ -138,11 +133,6 @@
     "domain": "https://www.japscan.ws",
     "type": "manga",
     "name": "JapScan"
-  },
-  {
-    "domain": "https://animes.vision",
-    "type": "anime",
-    "name": "AnimesVision"
   },
   {
     "domain": "https://www.hulu.com",
@@ -215,11 +205,6 @@
     "name": "Samehadaku"
   },
   {
-    "domain": "https://www.tsukimangas.com",
-    "type": "manga",
-    "name": "Tsuki Mangás"
-  },
-  {
     "domain": "https://mangatx.com",
     "type": "manga",
     "name": "mangatx"
@@ -233,11 +218,6 @@
     "domain": "https://www.tranimeizle.net/",
     "type": "anime",
     "name": "TRanimeizle"
-  },
-  {
-    "domain": "https://anihub.tv",
-    "type": "anime",
-    "name": "Anihub"
   },
   {
     "domain": "https://beta.animestreamingfr.fr",
@@ -275,11 +255,6 @@
     "name": "MangaFox"
   },
   {
-    "domain": "https://yayanimes.net",
-    "type": "anime",
-    "name": "YayAnimes"
-  },
-  {
     "domain": "https://desu-online.pl",
     "type": "anime",
     "name": "DesuOnline"
@@ -315,11 +290,6 @@
     "name": "ZeroScans"
   },
   {
-    "domain": "https://sensescans.com",
-    "type": "manga",
-    "name": "SenseScans"
-  },
-  {
     "domain": "https://manhuaplus.com",
     "type": "manga",
     "name": "ManhuaPlus"
@@ -345,11 +315,6 @@
     "name": "MangaSee"
   },
   {
-    "domain": "https://animetribes.ru",
-    "type": "anime",
-    "name": "AnimeTribes"
-  },
-  {
     "domain": "https://okanime.tv",
     "type": "anime",
     "name": "Okanime"
@@ -363,11 +328,6 @@
     "domain": "https://asura.gg",
     "type": "manga",
     "name": "AsuraScans"
-  },
-  {
-    "domain": "https://naniscans.com",
-    "type": "manga",
-    "name": "NaniScans"
   },
   {
     "domain": "https://jellyfin.org/",
@@ -413,11 +373,6 @@
     "domain": "https://fumetsu.pl",
     "type": "anime",
     "name": "Fumetsu"
-  },
-  {
-    "domain": "https://www.nonstopscans.com",
-    "type": "manga",
-    "name": "NonstopScans"
   },
   {
     "domain": "https://frixysubs.pl",
@@ -485,19 +440,9 @@
     "name": "Funimation"
   },
   {
-    "domain": "https://animesonline.org",
-    "type": "anime",
-    "name": "AnimesOnline"
-  },
-  {
     "domain": "https://mangas-origines.fr/",
     "type": "manga",
     "name": "MangasOrigines"
-  },
-  {
-    "domain": "https://shiro.is",
-    "type": "anime",
-    "name": "shiro"
   },
   {
     "domain": "https://www.bluesolo.org",
@@ -513,11 +458,6 @@
     "domain": "https://dynasty-scans.com",
     "type": "manga",
     "name": "DynastyScans"
-  },
-  {
-    "domain": "https://sugarbbscan.com/",
-    "type": "manga",
-    "name": "SugarBabies"
   },
   {
     "domain": "https://aniworld.to",
@@ -600,7 +540,7 @@
     "name": "ADKami"
   },
   {
-    "domain": "https://kaguya.live",
+    "domain": "https://kaguya.app",
     "type": "anime",
     "name": "Kaguya"
   },
@@ -625,6 +565,11 @@
     "name": "Isekaiscan"
   },
   {
+    "domain": "https://docchi.pl",
+    "type": "anime",
+    "name": "Docchi"
+  },
+  {
     "domain": "https://franime.fr",
     "type": "anime",
     "name": "FRAnime"
@@ -633,6 +578,11 @@
     "domain": "https://www.animelon.com",
     "type": "anime",
     "name": "Animelon"
+  },
+  {
+    "domain": "https://anime-sama.fr",
+    "type": "anime",
+    "name": "AnimeSama"
   },
   {
     "domain": "https://mangafire.to",
@@ -648,5 +598,25 @@
     "domain": "https://projectsuki.com",
     "type": "manga",
     "name": "projectsuki"
+  },
+  {
+    "domain": "https://www.animeonegai.com",
+    "type": "anime",
+    "name": "AnimeOnegai"
+  },
+  {
+    "domain": "https://1stkissmanga.me",
+    "type": "manga",
+    "name": "1stKissManga"
+  },
+  {
+    "domain": "https://animeko.co",
+    "type": "anime",
+    "name": "AnimeKO"
+  },
+  {
+    "domain": "https://animeflix.live",
+    "type": "anime",
+    "name": "Animeflix"
   }
 ]
