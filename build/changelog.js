@@ -68,6 +68,13 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.9.5',
+	data: [
+		'[Bugfix] Hotfix 9anime',
+		'[Bugfix] Hotfix Animesuge',
+	]
+},
+{
 	title: '0.9.4',
 	data: [
 		'[Feature] Add new install page',
