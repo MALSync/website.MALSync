@@ -575,6 +575,11 @@
     "name": "FRAnime"
   },
   {
+    "domain": "https://fmteam.fr/",
+    "type": "manga",
+    "name": "FMTeam"
+  },
+  {
     "domain": "https://www.animelon.com",
     "type": "anime",
     "name": "Animelon"
