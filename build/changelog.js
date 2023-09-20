@@ -68,6 +68,20 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.9.6',
+	data: [
+		'[FEATURE] Add anix by <a href="https://github.com/Source-Dom" target="_blank" rel="noopener" >Source-Dom</a>',
+		'[FEATURE] Add ogladajanime by <a href="https://github.com/kyanbasu" target="_blank" rel="noopener" >kyanbasu</a>',
+		'[FEATURE] Add hinatasoul by <a href="https://github.com/uKaigo" target="_blank" rel="noopener" >uKaigo</a>',
+		'[FEATURE] Add neoxscans by <a href="https://github.com/grlgmrs" target="_blank" rel="noopener" >grlgmrs</a>',
+		'[FEATURE] Add luciferdonghua by <a href="https://github.com/aadityataparia" target="_blank" rel="noopener" >aadityataparia</a>',
+		'[BUGFIX] Fix kitsu not working for some entries',
+		'[TASK] Support domains without TLD #1996',
+		'[TASK] Rename 9anime to aniwave',
+		'[TASK] Rename Zoro to aniwatch',
+	]
+},
+{
 	title: '0.9.5',
 	data: [
 		'[Bugfix] Hotfix 9anime',
