@@ -545,6 +545,11 @@
     "name": "Aniyan"
   },
   {
+    "domain": "https://marin.moe",
+    "type": "anime",
+    "name": "marin"
+  },
+  {
     "domain": "https://isekaiscan.com",
     "type": "manga",
     "name": "Isekaiscan"
