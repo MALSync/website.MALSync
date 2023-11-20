@@ -68,6 +68,17 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.9.7',
+	data: [
+		'[FEATURE] Add arabic language support',
+		'[FEATURE] Add Animego by <a href="https://github.com/NoPlagiarism" target="_blank" rel="noopener" >NoPlagiarism</a>',
+		'[FEATURE] Add SovetRomantica by <a href="https://github.com/NoPlagiarism" target="_blank" rel="noopener" >NoPlagiarism</a>',
+		'[FEATURE] Add Hachi by <a href="https://github.com/8eighth" target="_blank" rel="noopener" >8eighth</a>',
+		'[FEATURE] Add Witanime',
+		'[TASK] Readd AnimesVision',
+	]
+},
+{
 	title: '0.9.6',
 	data: [
 		'[FEATURE] Add anix by <a href="https://github.com/Source-Dom" target="_blank" rel="noopener" >Source-Dom</a>',
