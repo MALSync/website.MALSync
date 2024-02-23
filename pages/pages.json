@@ -415,6 +415,11 @@
     "name": "Funimation"
   },
   {
+    "domain": "https://lhtranslation.net",
+    "type": "manga",
+    "name": "LHTranslation"
+  },
+  {
     "domain": "https://mangas-origines.fr/",
     "type": "manga",
     "name": "MangasOrigines"
