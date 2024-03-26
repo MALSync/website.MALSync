@@ -68,6 +68,15 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.9.8',
+	data: [
+		'[FEATURE] Add option to show the "set completed" dialogue after watching',
+		'[FEATURE] Add Suwayomi',
+		'[FEATURE] Add Manhuaus',
+		'[FEATURE] Add Taiyo',
+	]
+},
+{
 	title: '0.9.7',
 	data: [
 		'[FEATURE] Add arabic language support',
