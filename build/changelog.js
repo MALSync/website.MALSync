@@ -68,6 +68,17 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.10.0',
+	data: [
+		'[TASK] Update to Manifest V3',
+		'[FEATURE] Add Miruro',
+		'[FEATURE] Add Latanime',
+		'[FEATURE] Add Animes Online',
+		'[FEATURE] Add AnimeBuff',
+		'[FEATURE] Add Anime365',
+	]
+},
+{
 	title: '0.9.8',
 	data: [
 		'[FEATURE] Add option to show the "set completed" dialogue after watching',
