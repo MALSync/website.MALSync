@@ -68,6 +68,18 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.10.2',
+	data: [
+		'[TASK] Minor hotfixes',
+	]
+},
+{
+	title: '0.10.1',
+	data: [
+		'[TASK] Minor hotfixes',
+	]
+},
+{
 	title: '0.10.0',
 	data: [
 		'[TASK] Update to Manifest V3',
