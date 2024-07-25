@@ -68,6 +68,14 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.10.3',
+	data: [
+		'[BUGFIX] Multiple Firefox fixes',
+		'[FEATURE] Add Bakashi',
+		'[FEATURE] Add Mangaread',
+	]
+},
+{
 	title: '0.10.2',
 	data: [
 		'[TASK] Minor hotfixes',
