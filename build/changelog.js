@@ -68,6 +68,14 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.10.4',
+	data: [
+		'[BUGFIX] Fix kitsu',
+		'[FEATURE] Add TempleScan',
+		'[FEATURE] Add lycoris',
+	]
+},
+{
 	title: '0.10.3',
 	data: [
 		'[BUGFIX] Multiple Firefox fixes',
