@@ -45,6 +45,11 @@
     "name": "Jkanime"
   },
   {
+    "domain": "https://proxer.me",
+    "type": "anime",
+    "name": "Proxer"
+  },
+  {
     "domain": "http://app.plex.tv",
     "type": "anime",
     "name": "Plex"
