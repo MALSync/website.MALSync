@@ -68,6 +68,26 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.11.0',
+	data: [
+
+		'[FEATURE] Add ScyllaScans by <a href="https://github.com/SoldierZoom" target="_blank" rel="noopener" >SoldierZoom</a>',
+		'[FEATURE] Add VortexScans by <a href="https://github.com/SoldierZoom" target="_blank" rel="noopener" >SoldierZoom</a>',
+		'[FEATURE] Add Animelib by <a href="https://github.com/DFreezerR" target="_blank" rel="noopener" >DFreezerR</a>',
+		'[FEATURE] Add Mangalib by <a href="https://github.com/DFreezerR" target="_blank" rel="noopener" >DFreezerR</a>',
+		'[FEATURE] Add Kavita by <a href="https://github.com/ZhiHanL" target="_blank" rel="noopener" >ZhiHanL</a>',
+		'[FEATURE] Add Aninexus by <a href="https://github.com/Flumuffel" target="_blank" rel="noopener" >Flumuffel</a>',
+		'[FEATURE] Add Q1N by <a href="https://github.com/Martins-74" target="_blank" rel="noopener" >Martins-74</a>',
+		'[FEATURE] Add Weeb Central',
+		'[NOTICE] We disabled the background list sync, due to the new additions written below.<br> Please check if everything is correct before reactivating it.',
+		'[FEATURE] Add start and end date mirroring to list sync',
+		'[FEATURE] Add volume mirroring to list sync',
+		'[FEATURE] Add rewatch count mirroring to list sync',
+		'[FEATURE] Add option to show english titles when using MAL',
+		'[BUGFIX] Use correct datetime formats depending on UI language',
+	]
+},
+{
 	title: '0.10.4',
 	data: [
 		'[BUGFIX] Fix kitsu',
