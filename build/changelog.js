@@ -68,6 +68,17 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.11.1',
+	data: [
+		'[BUGFIX] Fix pt-BR and zh-CN locale breaking views',
+		'[FEATURE] Add AnimeNoSub support <a href="https://github.com/tigeryu8900" target="_blank" rel="noopener">tigeryu8900</a>',
+		'[FEATURE] Add Rawkuma support <a href="https://github.com/tigeryu8900" target="_blank" rel="noopener">tigeryu8900</a>',
+		'[FEATURE] Add AnimeKAI support <a href="https://github.com/tigeryu8900" target="_blank" rel="noopener">tigeryu8900</a>',
+		'[FEATURE] Add Hikari',
+		'[FEATURE] Add manga completion percentage option',
+	]
+},
+{
 	title: '0.11.0',
 	data: [
 
