@@ -68,6 +68,14 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.12.0',
+	data: [
+		'[FEATURE] Add chibi pages',
+		'[FEATURE] Add AniDream',
+		'[FEATURE] Add Anizm support <a href="https://github.com/seahindeniz" target="_blank" rel="noopener">seahindeniz</a>',
+	]
+},
+{
 	title: '0.11.1',
 	data: [
 		'[BUGFIX] Fix pt-BR and zh-CN locale breaking views',
