@@ -1,18 +1,8 @@
 [
   {
-    "domain": "https://www.crunchyroll.com",
-    "type": "anime",
-    "name": "Crunchyroll"
-  },
-  {
     "domain": "https://www.mangadex.org",
     "type": "manga",
     "name": "Mangadex"
-  },
-  {
-    "domain": "https://gogoanime.tv",
-    "type": "anime",
-    "name": "Gogoanime"
   },
   {
     "domain": "https://www.turkanime.co",
@@ -128,16 +118,6 @@
     "domain": "https://manga4life.com",
     "type": "manga",
     "name": "manga4life"
-  },
-  {
-    "domain": "https://bato.to",
-    "type": "manga",
-    "name": "bato"
-  },
-  {
-    "domain": "https://mangapark.net",
-    "type": "manga",
-    "name": "MangaPark"
   },
   {
     "domain": "https://animexin.vip",
@@ -323,11 +303,6 @@
     "domain": "https://mangahub.io",
     "type": "manga",
     "name": "MangaHub"
-  },
-  {
-    "domain": "https://comick.io",
-    "type": "manga",
-    "name": "ComicK"
   },
   {
     "domain": "https://bentomanga.com",
@@ -580,11 +555,6 @@
     "name": "Animes Online"
   },
   {
-    "domain": "https://www.miruro.to",
-    "type": "anime",
-    "name": "Miruro"
-  },
-  {
     "domain": "https://latanime.org",
     "type": "anime",
     "name": "Latanime"
@@ -615,11 +585,6 @@
     "name": "VortexScans"
   },
   {
-    "domain": "https://weebcentral.com",
-    "type": "manga",
-    "name": "WeebCentral"
-  },
-  {
     "domain": "https://rawkuma.com",
     "type": "manga",
     "name": "Rawkuma"
@@ -630,19 +595,19 @@
     "name": "Aninexus"
   },
   {
-    "domain": "https://animekai.to",
-    "type": "anime",
-    "name": "AnimeKAI"
-  },
-  {
-    "domain": "https://watch.hikaritv.xyz",
-    "type": "anime",
-    "name": "Hikari"
-  },
-  {
     "domain": "https://anidream.cc",
     "type": "anime",
     "name": "AniDream"
+  },
+  {
+    "domain": "https://animeav1.com",
+    "type": "anime",
+    "name": "Animeav1"
+  },
+  {
+    "domain": "https://anicrush.to",
+    "type": "anime",
+    "name": "Anicrush"
   },
   {
     "domain": "https://manganato.gg",
@@ -650,7 +615,7 @@
     "name": "MangaNato"
   },
   {
-    "domain": "https://gojo.wtf",
+    "domain": "https://animetsu.cc",
     "type": "anime",
     "name": "Gojo"
   },
@@ -680,8 +645,68 @@
     "name": "Toonily"
   },
   {
-    "domain": "https://hivecomic.com",
+    "domain": "https://hivetoons.org",
     "type": "manga",
     "name": "VoidScans"
+  },
+  {
+    "domain": "https://anixl.to",
+    "type": "anime",
+    "name": "AniXL"
+  },
+  {
+    "domain": "https://bato.to",
+    "type": "manga",
+    "name": "bato"
+  },
+  {
+    "domain": "https://www.crunchyroll.com",
+    "type": "anime",
+    "name": "Crunchyroll"
+  },
+  {
+    "domain": "https://animevost.org",
+    "type": "anime",
+    "name": "AnimeVost"
+  },
+  {
+    "domain": "https://animekai.bz",
+    "type": "anime",
+    "name": "AnimeKAI"
+  },
+  {
+    "domain": "https://weebcentral.com",
+    "type": "manga",
+    "name": "WeebCentral"
+  },
+  {
+    "domain": "https://demonicscans.org",
+    "type": "manga",
+    "name": "MangaDemon"
+  },
+  {
+    "domain": "https://roliascan.com",
+    "type": "manga",
+    "name": "RoliaScan"
+  },
+  {
+    "domain": "https://mangtto.com",
+    "type": "manga",
+    "name": "Mangitto"
+  },
+  {
+    "domain": "https://anizium.co",
+    "type": "anime",
+    "name": "Anizium"
+  },
+  {
+    "domain": "https://www.miruro.to",
+    "type": "anime",
+    "name": "Miruro"
+  },
+  {
+    "domain": "https://MangaPark.to",
+    "type": "manga",
+    "name": "MangaPark"
   }
 ]
