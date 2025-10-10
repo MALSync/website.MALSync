@@ -215,11 +215,6 @@
     "name": "LynxScans"
   },
   {
-    "domain": "https://zeroscans.com",
-    "type": "manga",
-    "name": "ZeroScans"
-  },
-  {
     "domain": "https://manhuaplus.com",
     "type": "manga",
     "name": "ManhuaPlus"
@@ -445,11 +440,6 @@
     "name": "Animelon"
   },
   {
-    "domain": "https://animenosub.to",
-    "type": "anime",
-    "name": "AnimeNoSub"
-  },
-  {
     "domain": "https://anime-sama.fr",
     "type": "anime",
     "name": "AnimeSama"
@@ -548,11 +538,6 @@
     "domain": "https://templescan.net",
     "type": "manga",
     "name": "TempleScan"
-  },
-  {
-    "domain": "https://rawkuma.com",
-    "type": "manga",
-    "name": "Rawkuma"
   },
   {
     "domain": "https://aninexus.to",
@@ -765,6 +750,21 @@
     "name": "FlameScans"
   },
   {
+    "domain": "https://zscans.com/",
+    "type": "manga",
+    "name": "ZeroScans"
+  },
+  {
+    "domain": "https://drakecomic.org",
+    "type": "manga",
+    "name": "DrakeScans"
+  },
+  {
+    "domain": "https://asmotoon.com",
+    "type": "manga",
+    "name": "AsmodeusScans"
+  },
+  {
     "domain": "https://genzupdates.com/",
     "type": "manga",
     "name": "GenzToon"
@@ -783,5 +783,15 @@
     "domain": "https://tritinia.org",
     "type": "manga",
     "name": "TritiniaScans"
+  },
+  {
+    "domain": "https://animenosub.to",
+    "type": "anime",
+    "name": "AnimeNoSub"
+  },
+  {
+    "domain": "https://rawkuma.net",
+    "type": "manga",
+    "name": "Rawkuma"
   }
 ]
