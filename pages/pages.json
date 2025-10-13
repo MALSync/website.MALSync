@@ -200,11 +200,6 @@
     "name": "WuxiaWorld"
   },
   {
-    "domain": "https://lscomic.com",
-    "type": "manga",
-    "name": "LeviatanScans"
-  },
-  {
     "domain": "https://reaperscans.com",
     "type": "manga",
     "name": "ReaperScans"
@@ -373,11 +368,6 @@
     "domain": "https://www.animetoast.cc",
     "type": "anime",
     "name": "Animetoast"
-  },
-  {
-    "domain": "https://luminous-scans.com",
-    "type": "manga",
-    "name": "LuminousScans"
   },
   {
     "domain": "https://www.animeworld.tv",
@@ -570,7 +560,7 @@
     "name": "Gojo"
   },
   {
-    "domain": "https://anilib.me",
+    "domain": "https://v3.animelib.org",
     "type": "anime",
     "name": "AnimeLib"
   },
@@ -725,7 +715,7 @@
     "name": "Atsumaru"
   },
   {
-    "domain": "https://en-thunderscans.com",
+    "domain": "https://madarascans.com",
     "type": "manga",
     "name": "Madarascans"
   },
@@ -785,6 +775,21 @@
     "name": "TritiniaScans"
   },
   {
+    "domain": "https://philiascans.org/",
+    "type": "manga",
+    "name": "PhiliaScans"
+  },
+  {
+    "domain": "https://gdscans.com",
+    "type": "manga",
+    "name": "GalaxyDegenScans"
+  },
+  {
+    "domain": "https://jestful.net/",
+    "type": "manga",
+    "name": "Jestful"
+  },
+  {
     "domain": "https://animenosub.to",
     "type": "anime",
     "name": "AnimeNoSub"
@@ -793,5 +798,15 @@
     "domain": "https://rawkuma.net",
     "type": "manga",
     "name": "Rawkuma"
+  },
+  {
+    "domain": "https://kakuseiproject.com",
+    "type": "manga",
+    "name": "KakuseiProject"
+  },
+  {
+    "domain": "https://animekhor.org",
+    "type": "anime",
+    "name": "AnimeKhor"
   }
 ]
