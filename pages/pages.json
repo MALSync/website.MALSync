@@ -605,7 +605,7 @@
     "name": "AnimeVost"
   },
   {
-    "domain": "https://animekai.bz",
+    "domain": "https://animekai.to",
     "type": "anime",
     "name": "AnimeKAI"
   },
@@ -825,8 +825,33 @@
     "name": "MangaPlus"
   },
   {
+    "domain": "https://kagane.org",
+    "type": "manga",
+    "name": "Kagane"
+  },
+  {
     "domain": "https://mangaball.net",
     "type": "manga",
     "name": "MangaBall"
+  },
+  {
+    "domain": "https://kappabeast.com",
+    "type": "manga",
+    "name": "KappaBeast"
+  },
+  {
+    "domain": "https://danke.moe/",
+    "type": "manga",
+    "name": "DankefürsLesen"
+  },
+  {
+    "domain": "https://rokaricomics.com",
+    "type": "manga",
+    "name": "RokariComics"
+  },
+  {
+    "domain": "https://violetscans.org",
+    "type": "manga",
+    "name": "VioletScans"
   }
 ]
