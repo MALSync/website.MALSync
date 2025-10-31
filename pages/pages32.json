@@ -820,6 +820,11 @@
     "name": "Mangapill"
   },
   {
+    "domain": "https://www.silentquill.net",
+    "type": "manga",
+    "name": "Silentquill"
+  },
+  {
     "domain": "https://mangaplus.shueisha.co.jp",
     "type": "manga",
     "name": "MangaPlus"
