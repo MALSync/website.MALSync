@@ -10,11 +10,6 @@
     "name": "TurkAnime"
   },
   {
-    "domain": "https://animepahe.com",
-    "type": "anime",
-    "name": "animepahe"
-  },
-  {
     "domain": "https://www.netflix.com",
     "type": "anime",
     "name": "Netflix"
@@ -288,11 +283,6 @@
     "domain": "https://bentomanga.com",
     "type": "manga",
     "name": "Bentomanga"
-  },
-  {
-    "domain": "https://mangasushi.net",
-    "type": "manga",
-    "name": "MangaSushi"
   },
   {
     "domain": "https://readmanhua.net",
@@ -690,6 +680,11 @@
     "name": "ArvenComics"
   },
   {
+    "domain": "https://french-anime.com",
+    "type": "anime",
+    "name": "French Anime"
+  },
+  {
     "domain": "https://comikey.com/",
     "type": "manga",
     "name": "Comikey"
@@ -820,6 +815,11 @@
     "name": "Mangapill"
   },
   {
+    "domain": "https://comic-days.com",
+    "type": "manga",
+    "name": "ComicDays"
+  },
+  {
     "domain": "https://mangaplus.shueisha.co.jp",
     "type": "manga",
     "name": "MangaPlus"
@@ -853,5 +853,30 @@
     "domain": "https://violetscans.org",
     "type": "manga",
     "name": "VioletScans"
+  },
+  {
+    "domain": "https://animepahe.com",
+    "type": "anime",
+    "name": "animepahe"
+  },
+  {
+    "domain": "https://animeheaven.me",
+    "type": "anime",
+    "name": "AnimeHeaven"
+  },
+  {
+    "domain": "https://ritharscans.com",
+    "type": "manga",
+    "name": "Ritharscans"
+  },
+  {
+    "domain": "https://falconscans.com/",
+    "type": "manga",
+    "name": "FalconScans"
+  },
+  {
+    "domain": "https://mangasushi.org",
+    "type": "manga",
+    "name": "MangaSushi"
   }
 ]
