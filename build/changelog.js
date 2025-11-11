@@ -68,7 +68,7 @@ function changelog() {
 
 var changelogData = [
 {
-	title: '0.12.1',
+	title: '0.12.2',
 	data: [
 		'[FEATURE] Add Catppuccin themes <a href="https://github.com/FernLeafie" target="_blank" rel="noopener">FernLeafi</a>',
 		'[FEATURE] Add sidebar support <a href="https://github.com/tigeryu8900" target="_blank" rel="noopener">tigeryu890</a>',
