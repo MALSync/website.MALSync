@@ -883,5 +883,10 @@
     "domain": "https://mangasushi.org",
     "type": "manga",
     "name": "MangaSushi"
+  },
+  {
+    "domain": "https://comix.to",
+    "type": "manga",
+    "name": "Comix"
   }
 ]
