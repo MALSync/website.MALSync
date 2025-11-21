@@ -815,6 +815,11 @@
     "name": "Mangapill"
   },
   {
+    "domain": "https://www.silentquill.net",
+    "type": "manga",
+    "name": "Silentquill"
+  },
+  {
     "domain": "https://comic-days.com",
     "type": "manga",
     "name": "ComicDays"
