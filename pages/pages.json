@@ -925,6 +925,11 @@
     "name": "LuaScans"
   },
   {
+    "domain": "https://kaynscan.com",
+    "type": "manga",
+    "name": "KaynScan"
+  },
+  {
     "domain": "https://comic-walker.com/",
     "type": "manga",
     "name": "ComicWalker"
