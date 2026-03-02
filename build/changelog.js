@@ -92,7 +92,7 @@ var changelogData = [
 		'[FEATURE] Add fireanime <a href="https://github.com/senpaizeroani-design" target="_blank" rel="noopener">senpaizeroani-design</a>',
 		'[FEATURE] Add bigsolo <a href="https://github.com/apix0n" target="_blank" rel="noopener">apix0n</a>',
 	]
-}
+},
 {
 	title: '0.12.2',
 	data: [
