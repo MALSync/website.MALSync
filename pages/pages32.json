@@ -30,11 +30,6 @@
     "name": "Proxer"
   },
   {
-    "domain": "http://app.plex.tv",
-    "type": "anime",
-    "name": "Plex"
-  },
-  {
     "domain": "https://kickassanime.am",
     "type": "anime",
     "name": "KickAssAnime"
@@ -953,5 +948,15 @@
     "domain": "https://bigsolo.org",
     "type": "manga",
     "name": "BigSolo"
+  },
+  {
+    "domain": "http://app.plex.tv/",
+    "type": "anime",
+    "name": "Plex"
+  },
+  {
+    "domain": "https://allmanga.to",
+    "type": "anime",
+    "name": "allManga"
   }
 ]
