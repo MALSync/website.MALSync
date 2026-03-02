@@ -68,6 +68,32 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.12.3',
+	data: [
+		'[FEATURE] Add Mangabaka support',
+		'[FEATURE] Support alternative chibi repositories',
+		'[FEATURE] Add resume UI for video/manga readers',
+		'[FEATURE] Add Setsu Scans <a href="https://github.com/gickass" target="_blank" rel="noopener">gickass</a>',
+		'[FEATURE] Add WeebDex <a href="https://github.com/gickass" target="_blank" rel="noopener">gickass</a>',
+		'[FEATURE] Add LagoonScans <a href="https://github.com/gickass" target="_blank" rel="noopener">gickass</a>',
+		'[FEATURE] Add Comic walker <a href="https://github.com/gickass" target="_blank" rel="noopener">gickass</a>',
+		'[FEATURE] Add KaynScans <a href="https://github.com/gickass" target="_blank" rel="noopener">gickass</a>',
+		'[FEATURE] Add LuaScans <a href="https://github.com/gickass" target="_blank" rel="noopener">gickass</a>',
+		'[FEATURE] Add Mgeko <a href="https://github.com/gickass" target="_blank" rel="noopener">gickass</a>',
+		'[FEATURE] Add RezoScans <a href="https://github.com/gickass" target="_blank" rel="noopener">gickass</a>',
+		'[FEATURE] Add SanaScans <a href="https://github.com/gickass" target="_blank" rel="noopener">gickass</a>',
+		'[FEATURE] Add AniGo <a href="https://github.com/gickass" target="_blank" rel="noopener">gickass</a>',
+		'[FEATURE] Add RageScans <a href="https://github.com/gickass" target="_blank" rel="noopener">gickass</a>',
+		'[FEATURE] Add Kuudere <a href="https://github.com/gickass" target="_blank" rel="noopener">gickass</a>',
+		'[FEATURE] Add Bstation <a href="https://github.com/MeGaNeKoS" target="_blank" rel="noopener">MeGaNeKoS</a>',
+		'[FEATURE] Add Anoboye <a href="https://github.com/hamza-wolf" target="_blank" rel="noopener">hamza-wolf</a>',
+		'[FEATURE] Add MangaLivre <a href="https://github.com/Jhoorodre" target="_blank" rel="noopener">Jhoorodre</a>',
+		'[FEATURE] Add AnimeStreamingFR <a href="https://github.com/TriForMine" target="_blank" rel="noopener">TriForMine</a>',
+		'[FEATURE] Add fireanime <a href="https://github.com/senpaizeroani-design" target="_blank" rel="noopener">senpaizeroani-design</a>',
+		'[FEATURE] Add bigsolo <a href="https://github.com/apix0n" target="_blank" rel="noopener">apix0n</a>',
+	]
+}
+{
 	title: '0.12.2',
 	data: [
 		'[FEATURE] Add Catppuccin themes <a href="https://github.com/FernLeafie" target="_blank" rel="noopener">FernLeafie</a>',
