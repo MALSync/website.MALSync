@@ -60,6 +60,11 @@
     "name": "AnimeZone"
   },
   {
+    "domain": "https://www.mangadenizi.net",
+    "type": "manga",
+    "name": "mangadenizi"
+  },
+  {
     "domain": "https://moeclip.com",
     "type": "anime",
     "name": "moeclip"
