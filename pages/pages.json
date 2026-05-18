@@ -998,5 +998,10 @@
     "domain": "https://www.team-shadowi.com/",
     "type": "manga",
     "name": "TeamShadowi"
+  },
+  {
+    "domain": "https://tsukuyomi.tv",
+    "type": "anime",
+    "name": "Tsukuyomi"
   }
 ]
