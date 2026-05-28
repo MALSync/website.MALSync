@@ -655,6 +655,11 @@
     "name": "Sadscans"
   },
   {
+    "domain": "https://sakuramangas.org",
+    "type": "manga",
+    "name": "SakuraMangas"
+  },
+  {
     "domain": "https://arvencomics.com",
     "type": "manga",
     "name": "ArvenComics"
