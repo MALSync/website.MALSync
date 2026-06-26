@@ -215,11 +215,6 @@
     "name": "bs.to"
   },
   {
-    "domain": "https://jellyfin.org/",
-    "type": "anime",
-    "name": "Jellyfin"
-  },
-  {
     "domain": "https://an1me.to",
     "type": "anime",
     "name": "An1me"
@@ -820,7 +815,7 @@
     "name": "MangaPlus"
   },
   {
-    "domain": "https://kagane.org",
+    "domain": "https://kagane.to",
     "type": "manga",
     "name": "Kagane"
   },
@@ -1018,5 +1013,10 @@
     "domain": "https://en-hijala.com",
     "type": "manga",
     "name": "HijalaScans"
+  },
+  {
+    "domain": "https://jellyfin.org",
+    "type": "anime",
+    "name": "Jellyfin"
   }
 ]
