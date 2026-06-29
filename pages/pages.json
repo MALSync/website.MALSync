@@ -95,11 +95,6 @@
     "name": "MangaKatana"
   },
   {
-    "domain": "https://manga4life.com",
-    "type": "manga",
-    "name": "manga4life"
-  },
-  {
     "domain": "https://animexin.vip",
     "type": "anime",
     "name": "AnimeXin"
@@ -175,11 +170,6 @@
     "name": "WuxiaWorld"
   },
   {
-    "domain": "https://reaperscans.com",
-    "type": "manga",
-    "name": "ReaperScans"
-  },
-  {
     "domain": "https://lynxscans.com",
     "type": "manga",
     "name": "LynxScans"
@@ -198,11 +188,6 @@
     "domain": "https://tioanime.com",
     "type": "anime",
     "name": "tioanime"
-  },
-  {
-    "domain": "https://mangasee123.com",
-    "type": "manga",
-    "name": "MangaSee"
   },
   {
     "domain": "https://okanime.tv",
@@ -550,11 +535,6 @@
     "name": "AniXL"
   },
   {
-    "domain": "https://bato.to",
-    "type": "manga",
-    "name": "bato"
-  },
-  {
     "domain": "https://www.crunchyroll.com",
     "type": "anime",
     "name": "Crunchyroll"
@@ -563,11 +543,6 @@
     "domain": "https://animevost.org",
     "type": "anime",
     "name": "AnimeVost"
-  },
-  {
-    "domain": "https://animekai.to",
-    "type": "anime",
-    "name": "AnimeKAI"
   },
   {
     "domain": "https://fireani.me",
@@ -615,7 +590,7 @@
     "name": "Topanimes"
   },
   {
-    "domain": "https://qiscans.org",
+    "domain": "https://qimanga.com",
     "type": "manga",
     "name": "QiScans"
   },
@@ -645,7 +620,7 @@
     "name": "WitchScans"
   },
   {
-    "domain": "https://sadscans.com",
+    "domain": "https://sadscans.net",
     "type": "manga",
     "name": "Sadscans"
   },
@@ -890,11 +865,6 @@
     "name": "LagoonScan"
   },
   {
-    "domain": "https://weebdex.org/",
-    "type": "manga",
-    "name": "WeebDex"
-  },
-  {
     "domain": "https://setsuscans.com",
     "type": "manga",
     "name": "SetsuScans"
@@ -920,7 +890,7 @@
     "name": "LuaScans"
   },
   {
-    "domain": "https://kaynscan.com",
+    "domain": "https://kaynscan.org",
     "type": "manga",
     "name": "KaynScan"
   },
@@ -975,6 +945,11 @@
     "name": "allManga"
   },
   {
+    "domain": "https://mkissa.to",
+    "type": "manga",
+    "name": "Mkissa"
+  },
+  {
     "domain": "https://gaiaflix.live",
     "type": "anime",
     "name": "GaiaFlix"
@@ -993,11 +968,6 @@
     "domain": "https://elftoon.com",
     "type": "manga",
     "name": "ElfToon"
-  },
-  {
-    "domain": "https://hianime.to",
-    "type": "anime",
-    "name": "HiAnime"
   },
   {
     "domain": "https://www.team-shadowi.com/",
