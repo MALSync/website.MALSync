@@ -955,6 +955,11 @@
     "name": "GaiaFlix"
   },
   {
+    "domain": "https://anizone.to",
+    "type": "anime",
+    "name": "AniZone"
+  },
+  {
     "domain": "https://anime.nexus",
     "type": "anime",
     "name": "AnimeNexus"
