@@ -68,6 +68,12 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.12.5',
+	data: [
+		'[BUGFIX] Fix chromium browsers crashing',
+	]
+},
+{
 	title: '0.12.3',
 	data: [
 		'[FEATURE] Add Mangabaka support',
