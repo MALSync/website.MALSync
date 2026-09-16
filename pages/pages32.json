@@ -240,11 +240,6 @@
     "name": "MangaHub"
   },
   {
-    "domain": "https://bentomanga.com",
-    "type": "manga",
-    "name": "Bentomanga"
-  },
-  {
     "domain": "https://readmanhua.net",
     "type": "manga",
     "name": "ReadManhua"
@@ -263,11 +258,6 @@
     "domain": "https://mangas-origines.fr/",
     "type": "manga",
     "name": "MangasOrigines"
-  },
-  {
-    "domain": "https://www.bluesolo.org",
-    "type": "manga",
-    "name": "BlueSolo"
   },
   {
     "domain": "https://disasterscans.com",
@@ -348,11 +338,6 @@
     "domain": "https://docchi.pl",
     "type": "anime",
     "name": "Docchi"
-  },
-  {
-    "domain": "https://fmteam.fr",
-    "type": "manga",
-    "name": "FMTeam"
   },
   {
     "domain": "https://www.animelon.com",
@@ -1013,5 +998,25 @@
     "domain": "https://bs.cine.to",
     "type": "anime",
     "name": "bs.to"
+  },
+  {
+    "domain": "https://fmteam.fr",
+    "type": "manga",
+    "name": "FMTeam"
+  },
+  {
+    "domain": "https://bluesolo.org",
+    "type": "manga",
+    "name": "BlueSolo"
+  },
+  {
+    "domain": "https://flixmomo.app",
+    "type": "anime",
+    "name": "Flixmomo"
+  },
+  {
+    "domain": "https://naszeanime.pl",
+    "type": "anime",
+    "name": "NaszeAnime"
   }
 ]
