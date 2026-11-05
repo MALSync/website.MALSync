@@ -68,6 +68,21 @@ function changelog() {
 
 var changelogData = [
 {
+	title: '0.13.0',
+	data: [
+		'[FEATURE] Add support for AnimeOshi',
+		'[FEATURE] New episode rule mapping. Season and episode numbers from the page can now be mapped to the correct MAL entry, including absolute episode numbering and split courses.',
+		'[FEATURE] Support for tvdb episode numbering, even for specials (s0e12 in Plex)',
+		'[BUGFIX] Fix Netflix',
+		'[FEATURE] Add Chikari <a href="https://github.com/kennyL07" target="_blank" rel="noopener">kennyL07</a>',
+		'[FEATURE] Add FlixMomo <a href="https://github.com/kennyL07" target="_blank" rel="noopener">kennyL07</a>',
+		'[FEATURE] Add AnimeSaturn <a href="https://github.com/Myolet" target="_blank" rel="noopener">Myolet</a>',
+		'[FEATURE] Add Dragonroll <a href="https://github.com/cel000001" target="_blank" rel="noopener">cel000001</a>',
+		'[FEATURE] Add NaszeAnime.pl <a href="https://github.com/YatsuEku" target="_blank" rel="noopener">YatsuEku</a>',
+		'[FEATURE] Add Mist Scans',
+	]
+},
+{
 	title: '0.12.5',
 	data: [
 		'[BUGFIX] Fix chromium browsers crashing',
